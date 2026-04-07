@@ -1,0 +1,472 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Import AOS styles */
+@import 'aos/dist/aos.css';
+
+/* ═══════════════════════════════════════════════════════════════
+   THEME VARIABLES — Change these to rebrand the entire site!
+   Sirf yahan color/font change karo, poori site update ho jaayegi.
+   ═══════════════════════════════════════════════════════════════ */
+:root {
+  /* ── Brand Gold ─────────────────────────────────────── */
+  --color-gold: #af751c;
+  --color-gold-light: #c9983e;
+  --color-gold-bright: #e8c96a;
+  --color-gold-dark: #9a6b14;
+  --color-gold-pale: #e8d5a3;
+  --color-gold-bg: #f5ecd4;
+
+  /* ── Brand Navy / Primary ───────────────────────────── */
+  --color-navy: #1a3a5c;
+  --color-primary: #1a3a5c;
+  --color-primary-light: #2a5a8c;
+  --color-primary-dark: #0e2540;
+
+  /* ── Dark tones ─────────────────────────────────────── */
+  --color-dark: #1a1208;
+  --color-dark-mid: #2d2416;
+
+  /* ── Backgrounds ────────────────────────────────────── */
+  --color-cream: #f9f5ee;
+  --color-cream-dark: #f0e9d8;
+  --color-bg: #ffffff;
+  --color-bg-light: #f9f5ee;
+  --color-bg-muted: #f0e9d8;
+
+  /* ── Text ───────────────────────────────────────────── */
+  --color-text: #1e1a12;
+  --color-text-dark: #1e1a12;
+  --color-text-mid: #4a3f2f;
+  --color-text-light: #7a6e5f;
+  --color-muted: #cfc4b2;
+
+  /* ── Button radius ──────────────────────────────────── */
+  --btn-radius: 4px;
+  --btn-radius-pill: 50px;
+}
+
+
+/* ─── Keyframe Animations ───────────────────────────────── */
+
+@keyframes priceBtn {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes blinkText {
+  to {
+    visibility: hidden;
+  }
+}
+
+@keyframes blinkPrice {
+
+  0%,
+  49% {
+    opacity: 1;
+  }
+
+  50%,
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes waveMix {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(24px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes pulseGlow {
+
+  0%,
+  100% {
+    box-shadow: 0 0 0 0 rgba(175, 117, 28, 0.5);
+  }
+
+  50% {
+    box-shadow: 0 0 0 10px rgba(175, 117, 28, 0);
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: scale(0.85) translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+}
+
+
+/* ─── Animation Utility Classes ─────────────────────────── */
+
+.blink-price {
+  animation: blinkPrice 0.9s step-end infinite;
+}
+
+.blink-text {
+  animation: blinkText 0.8s steps(2) infinite;
+  color: #e06b2b;
+}
+
+.price-btn-animated {
+  background: linear-gradient(270deg, var(--color-gold), var(--color-gold-dark), var(--color-gold-bright), var(--color-gold));
+  background-size: 300% 300%;
+  animation: priceBtn 4s ease infinite;
+  color: var(--color-dark);
+  font-weight: 700;
+}
+
+.wave-cta {
+  background: linear-gradient(90deg, var(--color-primary), var(--color-primary-light), var(--color-primary));
+  background-size: 300% 100%;
+  animation: waveMix 4s ease infinite;
+}
+
+.fade-up {
+  animation: fadeUp 0.7s ease forwards;
+}
+
+.pulse-glow {
+  animation: pulseGlow 2s ease-in-out infinite;
+}
+
+.modal-enter {
+  animation: slideInRight 0.45s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
+
+
+/* ─── Base Styles ───────────────────────────────────────── */
+
+@layer base {
+
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+  }
+
+  body {
+    @apply antialiased;
+    font-family: var(--font-sans), var(--font-montserrat), sans-serif;
+    background-color: var(--color-cream);
+    color: var(--color-text-dark);
+    font-size: 14px;
+    line-height: 1.8;
+    overflow-x: hidden;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5 {
+    font-family: var(--font-serif), var(--font-cormorant), Georgia, serif;
+    font-weight: 400;
+  }
+
+  img {
+    max-width: 100%;
+    display: block;
+  }
+
+  button {
+    cursor: pointer;
+    border: none;
+    outline: none;
+    font-family: var(--font-sans), sans-serif;
+  }
+
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+
+  ul {
+    list-style: none;
+  }
+
+  input,
+  textarea {
+    font-family: var(--font-sans), sans-serif;
+  }
+
+  ::-webkit-scrollbar {
+    width: 5px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: var(--color-cream-dark);
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: var(--color-gold);
+    border-radius: 3px;
+  }
+}
+
+
+/* ─── Component Classes ─────────────────────────────────── */
+
+@layer components {
+
+  /* ── Buttons ── */
+  .btn-gold {
+    background: var(--color-gold);
+    color: #fff;
+    border: none;
+    border-radius: var(--btn-radius);
+    padding: 12px 32px;
+    font-family: var(--font-sans), sans-serif;
+    font-weight: 700;
+    font-size: 11px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background 0.3s;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+  }
+
+  .btn-gold:hover {
+    background: var(--color-gold-light);
+  }
+
+  .btn-primary {
+    background: var(--color-primary);
+    color: #ffffff;
+    border: none;
+    border-radius: var(--btn-radius);
+    padding: 12px 32px;
+    font-family: var(--font-sans), sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background 0.2s;
+  }
+
+  .btn-primary:hover {
+    background: var(--color-primary-light);
+  }
+
+  /* ── Section Labels ── */
+  .section-label {
+    @apply font-sans text-[11px] font-semibold tracking-[3px] uppercase text-gold;
+  }
+
+  .section-title {
+    font-size: 22px;
+    font-weight: 700;
+    color: var(--color-text-dark);
+    font-family: var(--font-serif), serif;
+  }
+
+  .heading-accent {
+    display: inline-block;
+    width: 50px;
+    height: 3px;
+    background: var(--color-gold);
+    margin-bottom: 12px;
+  }
+
+  .gold-divider {
+    @apply w-[60px] h-[2px] bg-gold my-4;
+  }
+
+  /* ── Form inputs ── */
+  .form-input {
+    width: 100%;
+    padding: 10px 0;
+    border: none;
+    border-bottom: 1px solid #ddd;
+    outline: none;
+    font-size: 15px;
+    color: var(--color-text-mid);
+    background: transparent;
+    font-family: var(--font-sans), sans-serif;
+    transition: border-color 0.2s;
+  }
+
+  .form-input:focus {
+    border-bottom-color: var(--color-gold);
+  }
+
+  /* ── Gold label / badge ── */
+  .gold-label {
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--color-gold);
+    font-family: var(--font-sans), sans-serif;
+  }
+
+  /* ── Gallery ── */
+  .gallery-item {
+    overflow: hidden;
+    cursor: pointer;
+  }
+
+  .gallery-item img {
+    transition: transform 0.4s ease;
+  }
+
+  .gallery-item:hover img {
+    transform: scale(1.08);
+  }
+
+  /* ── Pricing card ── */
+  .pricing-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .pricing-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.12);
+  }
+
+  /* ── Highlight card ── */
+  .highlight-card .card-img {
+    transition: transform 0.5s ease;
+  }
+
+  .highlight-card:hover .card-img {
+    transform: scale(1.07);
+  }
+
+  /* ── Straight hyphen ── */
+  .straight-hyphen {
+    font-family: var(--font-sans), sans-serif;
+    display: inline-block;
+    vertical-align: middle;
+    transform: translateY(-0.05em);
+  }
+}
+
+
+/* ─── Mobile Sticky Bottom Bar ──────────────────────────── */
+
+.sticky-bottom-bar {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
+  display: flex;
+}
+
+@media (min-width: 1024px) {
+  .sticky-bottom-bar {
+    display: none;
+  }
+}
+
+
+/* ─── Popup Overlay ─────────────────────────────────────── */
+
+.popup-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.72);
+  backdrop-filter: blur(6px);
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.45s cubic-bezier(0.22, 1, 0.36, 1), visibility 0.45s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.popup-overlay.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.popup-box {
+  transform: scale(0.85) translateY(20px);
+  transition: transform 0.45s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.popup-overlay.active .popup-box {
+  transform: scale(1) translateY(0);
+}
+
+
+/* ─── react-phone-input-2 overrides ─────────────────────── */
+
+.react-tel-input .form-control {
+  width: 100% !important;
+  background: transparent !important;
+  border: none !important;
+  border-bottom: 1px solid var(--color-muted) !important;
+  border-radius: 0 !important;
+  font-family: var(--font-sans), sans-serif !important;
+  font-size: 14px !important;
+  padding-left: 52px !important;
+  color: var(--color-text-dark) !important;
+  height: 40px !important;
+}
+
+.react-tel-input .flag-dropdown {
+  background: transparent !important;
+  border: none !important;
+  border-bottom: 1px solid var(--color-muted) !important;
+  border-radius: 0 !important;
+}
+
+.react-tel-input .selected-flag {
+  background: transparent !important;
+}
+
+.react-tel-input .country-list {
+  background: #fff !important;
+  border: 1px solid var(--color-gold-pale) !important;
+  font-family: var(--font-sans), sans-serif !important;
+}
