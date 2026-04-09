@@ -43,7 +43,7 @@ export default function Home() {
       <Location />
       <VirtualTour  onEnquire={() => setIsOpen(true)} />
       <Gallery />
-      <PressCenter />
+      {/* <PressCenter /> */}
       <Developer />
       <Footer />
       <EnquireModal isOpen={isOpen} setIsOpen={setIsOpen} />
