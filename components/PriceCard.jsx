@@ -4,7 +4,7 @@ const plans = [
   {
     type: '3 BHK',
     size: '2277.45 Sq.ft.',
-    price: '5.75 Cr*',
+    price: '5.4 Cr*',
     priceLabel: 'Price Start From',
     btnText: 'Get Cost Sheet',
     showRupee: false,

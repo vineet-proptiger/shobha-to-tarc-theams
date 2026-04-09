@@ -31,7 +31,7 @@ const nephilm = localFont({
 
 export const metadata = {
   title: 'Sobha Sector 63A Crescent | Luxury Residences Gurugram',
-  description: '3 & 4 BHK Ultra-Luxury Residences at Sobha Sector 63A on Golf Course Extension Road, Gurugram. Starting ₹5.75 Cr*. 12-acre township, 4 towers, 100% corner homes.',
+  description: '3 & 4 BHK Ultra-Luxury Residences at Sobha Sector 63A on Golf Course Extension Road, Gurugram. Starting ₹5.4Cr*. 12-acre township, 4 towers, 100% corner homes.',
 }
 
 export default function RootLayout({ children }) {
