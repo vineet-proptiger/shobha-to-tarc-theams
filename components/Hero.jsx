@@ -88,7 +88,7 @@ export default function Hero({ onEnquire, onMenuClick }) {
             <p className="font-sans text-[12px] text-text-light tracking-[0.5px] -mb-2.5">Price Starts From</p>
             <p className="font-serif font-normal text-gold leading-none"
               style={{ fontSize: 'clamp(36px, 5vw, 62px)' }}>
-              ₹ 5.75 Cr<sup className="text-[0.45em] text-gold">*</sup>
+              ₹ 5.4 Cr<sup className="text-[0.45em] text-gold">*</sup>
             </p>
 
             <button onClick={onEnquire}
