@@ -12,6 +12,7 @@ const Highlights  = dynamic(() => import('../components/Highlights'),  { ssr: tr
 const Directions  = dynamic(() => import('../components/Directions'),  { ssr: true })
 const Amenities   = dynamic(() => import('../components/Amenities'),   { ssr: true })
 const MasterPlan  = dynamic(() => import('../components/MasterPlan'),  { ssr: true })
+const PriceCard   = dynamic(() => import('../components/PriceCard'),   { ssr: true })
 const Location    = dynamic(() => import('../components/Location'),    { ssr: true })
 const PressCenter = dynamic(() => import('../components/PressCenter'), { ssr: true })
 const Developer   = dynamic(() => import('../components/Developer'),   { ssr: true })
@@ -38,8 +39,9 @@ export default function Home() {
       <Directions   onEnquire={() => setIsOpen(true)} />
       <Amenities />
       <MasterPlan   onEnquire={() => setIsOpen(true)} />
+      <PriceCard    onEnquire={() => setIsOpen(true)} />
       <Location />
-      <VirtualTour />
+      <VirtualTour  onEnquire={() => setIsOpen(true)} />
       <Gallery />
       <PressCenter />
       <Developer />

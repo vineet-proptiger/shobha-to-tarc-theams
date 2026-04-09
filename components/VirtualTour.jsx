@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import { virtualTourImages } from '../lib/images'
 
-export default function VirtualTour() {
+export default function VirtualTour({ onEnquire }) {
   return (
     <section id="virtualtour" className="relative flex items-center justify-center overflow-hidden" style={{ minHeight: '600px' }}>
       {/* BG */}
@@ -30,7 +30,7 @@ export default function VirtualTour() {
           <span className="font-serif text-gold relative z-10" style={{ fontSize: '22px', fontWeight: 500 }}>360°</span>
         </div>
 
-        <button className="inline-flex items-center gap-3 bg-transparent text-white font-sans text-[12px] font-semibold tracking-[3px] uppercase transition-all duration-300 hover:bg-gold mt-2.5"
+        <button onClick={onEnquire} className="inline-flex items-center gap-3 bg-transparent text-white font-sans text-[12px] font-semibold tracking-[3px] uppercase transition-all duration-300 hover:bg-gold mt-2.5"
           style={{ padding: '16px 40px', border: '1px solid var(--color-gold)' }}>
           <span className="flex items-center justify-center rounded-full bg-gold text-[10px] transition-all duration-300"
             style={{ width: '30px', height: '30px' }}>▶</span>

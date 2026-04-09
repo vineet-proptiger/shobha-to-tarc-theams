@@ -40,7 +40,7 @@ export default function Footer() {
       {/* Meta */}
       <div className="flex flex-col items-center gap-2.5 text-center" style={{ padding: '20px 40px' }}>
         <p className="font-sans text-[12px] text-text-mid tracking-[0.3px]">
-          Project RERA NO.: Coming Soon (Subject to official approvals)
+          Project RERA NO.:RC/HARERA/GGM/3006/2801/2024/71
         </p>
         <div className="flex items-center gap-2.5 flex-wrap justify-center">
           {['Disclaimer & Privacy Policy', 'Environment Compliance', 'Building Plan'].map((label, i) => (
