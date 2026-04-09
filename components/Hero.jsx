@@ -12,7 +12,7 @@ export default function Hero({ onEnquire, onMenuClick }) {
         <div className="relative overflow-hidden flex flex-col justify-between hero-left">
           <Image
             src={heroImages.bg}
-            alt="Tarc Ishva"
+            alt="Sobha Sector 63A"
             fill
             priority
             className="object-cover object-[center_40%]"

@@ -1,22 +1,22 @@
-import { IshvaLogo, TarcLogo } from './Logos'
+import { SobhaLogo } from './Logos'
 
 const press = [
   {
     bg: 'linear-gradient(135deg, #e8e0d5 0%, #d4c8b8 100%)',
-    headline: 'TARC Ltd Achieves 900% Growth in Q2 FY25!',
-    sub: 'TARC reports record growth in quarterly earnings',
+    headline: 'Sobha Realty Achieves 900% Growth in Q2 FY25!',
+    sub: 'Sobha reports record growth in quarterly earnings',
     dark: false,
   },
   {
     bg: 'linear-gradient(135deg, #0d2240 0%, #1a3a5c 60%, #8a6520 100%)',
     headline: 'HITS 50% SALES MILESTONE WORTH ₹1,350 CR!',
-    sub: 'TARC reports Rs 1,350 crore pre-sale from Gurugram project',
+    sub: 'Sobha reports Rs 1,350 crore pre-sale from Gurugram project',
     dark: true,
   },
   {
     bg: 'linear-gradient(135deg, #f5f0e8 0%, #ede6d8 100%)',
     headline: 'Business Standard',
-    sub: 'TARC shares zoom 5% on making sales worth Rs 1,350 cr in Gurugram project',
+    sub: 'Sobha shares zoom 5% on making sales worth Rs 1,350 cr in Gurugram project',
     dark: false,
     isBs: true,
   },
@@ -27,10 +27,9 @@ export default function PressCenter() {
     <section id="press" className="press-section">
       {/* Header */}
       <div className="text-center flex flex-col items-center gap-2.5 mb-11 px-4">
-        <IshvaLogo size={64} />
         <span className="font-sans text-[10px] font-bold tracking-[3px] uppercase text-text-mid">PRESS CENTER</span>
         <h2 className="font-serif italic text-gold tracking-[0.5px]" style={{ fontSize: 'clamp(22px, 3vw, 34px)' }}>
-          TARC Ishva Through The Headlines
+          Sobha Realty Through The Headlines
         </h2>
       </div>
 
@@ -46,10 +45,10 @@ export default function PressCenter() {
             {/* Logo row */}
             <div className="flex items-center gap-2"
               style={{ padding: '20px 20px 12px', borderBottom: `1px solid ${item.dark ? 'rgba(255,255,255,0.1)' : 'rgba(175,117,28,0.15)'}` }}>
-              <TarcLogo size={28} color={item.dark ? '#c9983e' : '#af751c'} />
+              <SobhaLogo size={18} />
               <span className="font-sans text-[14px] font-bold tracking-[3px]"
                 style={{ color: item.dark ? '#c9983e' : 'var(--color-navy)' }}>
-                {item.isBs ? 'Business Standard' : 'TARC'}
+                {item.isBs ? 'Business Standard' : 'SOBHA'}
               </span>
             </div>
 

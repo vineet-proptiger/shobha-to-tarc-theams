@@ -70,7 +70,7 @@ export default function Location() {
             </div>
             <span className="bg-gold text-white font-sans text-[10px] font-bold tracking-[1.5px] uppercase whitespace-nowrap"
               style={{ padding: '5px 12px' }}>
-              Tarc Ishva
+              Sobha Reality
             </span>
           </div>
         </div>

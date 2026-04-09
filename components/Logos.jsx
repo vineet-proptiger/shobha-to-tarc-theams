@@ -1,6 +1,6 @@
 'use client'
 // ═══════════════════════════════════════════════════════════════
-//  LOGOS — TARC ISHVA (Next.js)
+//  LOGOS — Sobha Reality (Next.js)
 //
 //  Custom logo lagana ho to:
 //    public/images/logo/TARC-logo.png  → TarcLogo mein use hoga
@@ -18,6 +18,18 @@ export function TarcLogo({ size = 44, dark = false, color }) {
       src="/images/logo/TARC-l.png"
       alt="TARC Logo"
       width={100}
+      height={size}
+      style={{ display: 'block', height: `${size}px`, width: 'auto', maxWidth: 'none' }}
+    />
+  )
+}
+
+export function SobhaLogo({ size = 44, dark = false }) {
+  return (
+    <Image
+      src="/images/logo/logo.webp"
+      alt="Sobha Logo"
+      width={120}
       height={size}
       style={{ display: 'block', height: `${size}px`, width: 'auto', maxWidth: 'none' }}
     />

@@ -2,7 +2,6 @@
 import Image from 'next/image'
 import { useState, useEffect } from 'react'
 import { amenityImages } from '../lib/images'
-import { FlameLogo } from './Logos'
 
 export default function Amenities() {
   const [active, setActive] = useState(0)
@@ -22,7 +21,6 @@ export default function Amenities() {
           {/* White card */}
           <div className="bg-white flex flex-col items-center gap-4 w-full amenities-card"
             style={{ boxShadow: '0 20px 60px rgba(0,0,0,0.1)' }}>
-            <div className="mb-1"><FlameLogo size={64} /></div>
             <span className="font-sans text-[10px] font-bold tracking-[3.5px] uppercase text-text-mid text-center">
               OUR AMENITIES
             </span>

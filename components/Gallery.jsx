@@ -2,7 +2,6 @@
 import Image from 'next/image'
 import { useState } from 'react'
 import { galleryImages } from '../lib/images'
-import { IshvaLogo } from './Logos'
 
 export default function Gallery() {
   const [lightbox, setLightbox] = useState(null)
@@ -15,7 +14,6 @@ export default function Gallery() {
     <section id="gallery" className="bg-cream-dark py-[60px] md:py-[80px]">
       {/* Header */}
       <div className="text-center flex flex-col items-center gap-2.5 mb-10 px-4">
-        <IshvaLogo size={64} />
         <span className="font-sans text-[10px] font-bold tracking-[3px] uppercase text-text-mid">
           OUR PROJECT IMAGES
         </span>

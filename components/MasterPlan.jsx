@@ -1,7 +1,6 @@
 'use client'
 import Image from 'next/image'
 import { masterplanImages } from '../lib/images'
-import { FlameLogo } from './Logos'
 
 export default function MasterPlan({ onEnquire }) {
   return (
@@ -14,7 +13,6 @@ export default function MasterPlan({ onEnquire }) {
           {/* White card */}
           <div className="bg-white flex flex-col items-center gap-4 w-full masterplan-card"
             style={{ boxShadow: '0 20px 60px rgba(0,0,0,0.1)' }}>
-            <div className="mb-1"><FlameLogo size={64} /></div>
             <span className="font-sans text-[10px] font-bold tracking-[3.5px] uppercase text-text-mid text-center">
               MASTER PLAN
             </span>

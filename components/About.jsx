@@ -9,7 +9,7 @@ export default function About({ onEnquire }) {
     <section id="about" className="relative flex items-center justify-center md:justify-end overflow-hidden py-20 md:py-0" style={{ minHeight: '90vh' }}>
       <Image
         src={aboutImages.bg}
-        alt="TARC Ishva"
+        alt="Sobha Sector 63A"
         fill
         priority
         className="object-cover object-center"
@@ -19,9 +19,9 @@ export default function About({ onEnquire }) {
 
       {/* Top center */}
       <div className="absolute top-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2.5 z-10 w-full px-4">
-        <div className="relative h-12 w-28 opacity-70 grayscale brightness-0">
+        {/* <div className="relative h-12 w-28 opacity-70 grayscale brightness-0">
           <Image src={logoImage} alt="Sobha Realty" fill className="object-contain" />
-        </div>
+        </div> */}
         <p className="font-sans text-[11px] sm:text-[13px] font-semibold tracking-[2.5px] uppercase text-center mt-1"
           style={{ color: 'var(--color-text-mid)' }}>
           SOBHA CRESCENT — SECTOR 63A, GURUGRAM
