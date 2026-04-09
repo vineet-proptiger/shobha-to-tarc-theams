@@ -3,7 +3,7 @@
 const plans = [
   {
     type: '3 BHK',
-    size: '2300 Sq.ft.',
+    size: '2277.45 Sq.ft.',
     price: '5.75 Cr*',
     priceLabel: 'Price Start From',
     btnText: 'Get Cost Sheet',
@@ -11,15 +11,15 @@ const plans = [
   },
   {
     type: '3 BHK + Study',
-    size: '2700 Sq.ft.',
+    size: '2669.47 Sq.ft.',
     price: 'Ask For Price',
     priceLabel: 'Price Start From',
     btnText: 'Ask For Price',
     showRupee: true,
   },
   {
-    type: '4 BHK + DH',
-    size: '3000 Sq.ft.',
+    type: '4 Bed Residence Grande + Utility Room',
+    size: '2966.67 Sq.ft.',
     price: 'Ask For Price',
     priceLabel: 'Price Start From',
     btnText: 'Ask For Price',
