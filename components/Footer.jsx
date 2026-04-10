@@ -31,7 +31,7 @@ export default function Footer() {
         <div className="flex-1 flex flex-col gap-2 text-center px-10 max-[768px]:px-0">
           <h4 className="font-sans text-[12px] font-bold tracking-[1.5px] uppercase text-text-dark mb-1.5">Contact Us</h4>
           <Link href="tel:+919718344024" className="font-sans text-[13px] text-text-mid hover:text-gold transition-colors block">+91 9718344024</Link>
-          <Link href="mailto:sales@sobha.com" className="font-sans text-[13px] text-text-mid hover:text-gold transition-colors block">sales@sobha.com</Link>
+          {/* <Link href="mailto:sales@sobha.com" className="font-sans text-[13px] text-text-mid hover:text-gold transition-colors block">sales@sobha.com</Link> */}
         </div>
       </div>
 
@@ -42,16 +42,7 @@ export default function Footer() {
         <p className="font-sans text-[12px] text-text-mid tracking-[0.3px]">
           Project RERA NO.:RC/HARERA/GGM/3006/2801/2024/71
         </p>
-        <div className="flex items-center gap-2.5 flex-wrap justify-center">
-          {['Disclaimer & Privacy Policy', 'Environment Compliance', 'Building Plan'].map((label, i) => (
-            <span key={label} className="flex items-center gap-2.5">
-              <Link href="#" className="font-sans text-[11.5px] text-text-mid hover:text-gold transition-colors">{label}</Link>
-              {i < 2 && <span className="font-sans text-[11.5px]" style={{ color: 'rgba(175,117,28,0.4)' }}>|</span>}
-            </span>
-          ))}
-          <span style={{ color: 'rgba(175,117,28,0.4)' }}>|</span>
-          <span className="font-sans text-[11.5px] text-text-mid">Crafted by GTF Technologies</span>
-        </div>
+        
       </div>
 
       <div className="h-[1px] mx-10 max-[768px]:mx-5" style={{ background: 'rgba(175,117,28,0.2)' }} />
