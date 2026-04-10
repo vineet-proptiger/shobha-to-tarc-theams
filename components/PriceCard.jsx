@@ -10,7 +10,7 @@ const plans = [
     showRupee: false,
   },
   {
-    type: '3 BHK',
+    type: '4 BHK',
     size: '2669.47 Sq.ft.',
     price: 'Ask For Price',
     priceLabel: 'Price Start From',
