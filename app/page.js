@@ -1,5 +1,5 @@
 'use client'
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import dynamic from 'next/dynamic'
 
 // Static imports (LCP critical)
@@ -28,6 +28,24 @@ const GOLD = 'var(--color-gold)'
 
 export default function Home() {
   const [isOpen, setIsOpen] = useState(false)
+
+  useEffect(() => {
+    let interval;
+    // Initial popup after 10 seconds
+    const timeout = setTimeout(() => {
+      setIsOpen(true);
+
+      // Subsequent popups every 20 seconds
+      interval = setInterval(() => {
+        setIsOpen(true);
+      }, 20000);
+    }, 10000);
+
+    return () => {
+      clearTimeout(timeout);
+      if (interval) clearInterval(interval);
+    };
+  }, []);
 
   return (
     <main className="relative min-h-screen">
