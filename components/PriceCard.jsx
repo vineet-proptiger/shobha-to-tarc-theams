@@ -133,9 +133,10 @@ export default function PriceCard({ onEnquire }) {
 
         .price-card-meta {
           display: flex;
-          justify-content: space-around;
+          justify-content: space-between;
           width: 100%;
-          gap: 12px;
+          gap: 8px;
+          padding: 0 4px;
         }
 
         .price-card-meta > div {
@@ -157,6 +158,13 @@ export default function PriceCard({ onEnquire }) {
           font-size: 15px;
           font-weight: 700;
           color: #1a1a1a;
+          white-space: nowrap;
+        }
+
+        /* Allow Type to wrap if needed, but not Size */
+        .price-card-meta > div:first-child .meta-val {
+          white-space: normal;
+          text-align: center;
         }
 
         .price-card-bottom {
