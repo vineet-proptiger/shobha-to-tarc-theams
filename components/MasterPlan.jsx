@@ -70,7 +70,7 @@ export default function MasterPlan({ onEnquire }) {
         </div>
 
         {/* Right image */}
-        <div className="relative overflow-hidden cursor-zoom-in group masterplan-img" onClick={onEnquire}>
+        <div className="relative overflow-hidden cursor-pointer group masterplan-img" onClick={onEnquire}>
           {plans.map((p, i) => (
             <div key={i} className="absolute inset-0 transition-opacity duration-[900ms] ease-in-out"
               style={{ opacity: i === active ? 1 : 0 }}>
@@ -78,13 +78,21 @@ export default function MasterPlan({ onEnquire }) {
                 src={p.img}
                 alt={p.label}
                 fill
-                className="object-cover transition-all duration-400 blur-[1px] group-hover:blur-0 brightness-[0.9] group-hover:brightness-[0.95]"
+                className="object-cover transition-all duration-400 blur-[3px] brightness-[0.8]"
               />
             </div>
           ))}
-          <div className="absolute inset-0 transition-colors duration-300 z-10"
-            style={{ background: 'rgba(249,245,238,0.15)' }} />
+          <div className="absolute inset-0 transition-colors duration-300 z-10 bg-black/20" />
+
+          <div className="absolute inset-0 z-20 flex items-center justify-center">
+            <button className="btn-gold px-8 py-3.5 shadow-2xl scale-110">
+              View Plan
+            </button>
+          </div>
+
         </div>
+
+
       </div>
 
       <style>{`

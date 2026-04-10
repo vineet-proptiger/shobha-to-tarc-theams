@@ -7,11 +7,11 @@ const inputClass =
   'w-full py-3 text-sm text-gray-700 outline-none bg-transparent placeholder-gray-400 border-0 border-b border-gray-200 focus:border-b-2 transition-all'
 
 const LeadForm = ({ formName = 'Hero Form', btnText = 'Submit Details' }) => {
-  const [formData,   setFormData]   = useState({ fullname: '', email: '', phone: '' })
-  const [loading,    setLoading]    = useState(false)
-  const [success,    setSuccess]    = useState(false)
-  const [error,      setError]      = useState('')
-  const [ipAddress,  setIpAddress]  = useState('')
+  const [formData, setFormData] = useState({ fullname: '', email: '', phone: '', consent: true })
+  const [loading, setLoading] = useState(false)
+  const [success, setSuccess] = useState(false)
+  const [error, setError] = useState('')
+  const [ipAddress, setIpAddress] = useState('')
   const [geoAddress, setGeoAddress] = useState(null)
 
   useEffect(() => {
@@ -26,6 +26,10 @@ const LeadForm = ({ formName = 'Hero Form', btnText = 'Submit Details' }) => {
 
   const handleSubmit = async (e) => {
     e.preventDefault()
+    if (!formData.consent) {
+      setError('Please authorize us to contact you.')
+      return
+    }
     if (!formData.phone || formData.phone.length < 10) {
       setError('Please enter a valid 10-digit mobile number.')
       return
@@ -34,21 +38,21 @@ const LeadForm = ({ formName = 'Hero Form', btnText = 'Submit Details' }) => {
     setLoading(true)
 
     const tracking = buildTrackingFields(ipAddress, geoAddress)
-    const payload  = new FormData()
+    const payload = new FormData()
 
-    payload.append('fullname',    formData.fullname)
-    payload.append('email',       formData.email)
-    payload.append('phone',       formData.phone)
-    payload.append('projectId',   PROJECT_ID)
+    payload.append('fullname', formData.fullname)
+    payload.append('email', formData.email)
+    payload.append('phone', formData.phone)
+    payload.append('projectId', PROJECT_ID)
     payload.append('projectName', PROJECT_NAME)
-    payload.append('form_name',   formName)
-    payload.append('sheet_name',  SHEET_NAME)
-    payload.append('secret',      SECRET_KEY)
-    payload.append('city',        CITY_DISPLAY)
+    payload.append('form_name', formName)
+    payload.append('sheet_name', SHEET_NAME)
+    payload.append('secret', SECRET_KEY)
+    payload.append('city', CITY_DISPLAY)
     Object.entries(tracking).forEach(([k, v]) => payload.append(k, v))
 
     try {
-      const res  = await fetch(API_ENDPOINT, { method: 'POST', body: payload })
+      const res = await fetch(API_ENDPOINT, { method: 'POST', body: payload })
       const data = await res.json()
       if (data.status) {
         setSuccess(true)
@@ -56,14 +60,14 @@ const LeadForm = ({ formName = 'Hero Form', btnText = 'Submit Details' }) => {
           window.dataLayer = window.dataLayer || []
           const nameParts = formData.fullname.trim().split(' ')
           window.dataLayer.push({
-            event:     'lead_submit_success',
+            event: 'lead_submit_success',
             form_name: formName,
             user_data: {
-              email:      formData.email.trim() || undefined,
-              phone:      formData.phone,
+              email: formData.email.trim() || undefined,
+              phone: formData.phone,
               first_name: nameParts[0] || '',
-              last_name:  nameParts.slice(1).join(' ') || '',
-              address:    geoAddress,
+              last_name: nameParts.slice(1).join(' ') || '',
+              address: geoAddress,
             },
           })
         }
@@ -131,9 +135,12 @@ const LeadForm = ({ formName = 'Hero Form', btnText = 'Submit Details' }) => {
       <div className="flex items-start gap-2 mt-3">
         <input
           type="checkbox" id="privacy-lead" required
+          checked={formData.consent}
+          onChange={(e) => setFormData({ ...formData, consent: e.target.checked })}
           className="mt-0.5 shrink-0"
           style={{ accentColor: 'var(--color-gold)' }}
         />
+
         <label
           htmlFor="privacy-lead"
           className="text-xs text-gray-500 leading-relaxed cursor-pointer"
