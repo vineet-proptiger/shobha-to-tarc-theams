@@ -105,10 +105,10 @@ export default function Developer() {
 
       {/* Top header */}
       <div className="flex flex-col items-center gap-2 mb-4 relative z-10">
-        <div className="relative h-12 w-28 opacity-70 grayscale brightness-0">
+        {/* <div className="relative h-12 w-28 opacity-70 grayscale brightness-0">
           <Image src={logoImage} alt="Sobha Realty" fill className="object-contain" />
-        </div>
-        <span className="font-sans text-[10px] font-bold tracking-[3px] uppercase text-text-mid mt-2">CONTACT US</span>
+        </div> */}
+        <span className="font-sans text-[10px] font-bold tracking-[3px] uppercase text-text-mid">CONTACT US</span>
       </div>
 
       <h2 className="font-serif italic text-gold text-center mb-8 sm:mb-12 tracking-[0.3px] relative z-10 px-4"
@@ -193,7 +193,7 @@ export default function Developer() {
       <style>{`
         .developer-section {
           background: var(--color-cream-dark);
-          padding: 70px 60px 80px;
+          padding: 0px 60px 80px;
         }
         .developer-grid {
           display: grid;

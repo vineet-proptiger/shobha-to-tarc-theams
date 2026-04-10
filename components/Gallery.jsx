@@ -11,7 +11,7 @@ export default function Gallery() {
   const next = () => setLightbox((lightbox + 1) % images.length)
 
   return (
-    <section id="gallery" className="bg-cream-dark py-[60px] md:py-[80px]">
+    <section id="gallery" className="bg-cream-dark py-[50px] md:py-[80px]">
       {/* Header */}
       <div className="text-center flex flex-col items-center gap-2.5 mb-10 px-4">
         <span className="font-sans text-[10px] font-bold tracking-[3px] uppercase text-text-mid">
