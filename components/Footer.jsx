@@ -31,6 +31,7 @@ export default function Footer() {
         <div className="flex-1 flex flex-col gap-2 text-center px-10 max-[768px]:px-0">
           <h4 className="font-sans text-[12px] font-bold tracking-[1.5px] uppercase text-text-dark mb-1.5">Contact Us</h4>
           <Link href="tel:+919718344024" className="font-sans text-[13px] text-text-mid hover:text-gold transition-colors block">+91 9718344024</Link>
+          <Link href="/privacy-policy" className="font-sans text-[13px] text-text-mid hover:text-gold transition-colors block">Privacy Policy</Link>
           {/* <Link href="mailto:sales@sobha.com" className="font-sans text-[13px] text-text-mid hover:text-gold transition-colors block">sales@sobha.com</Link> */}
         </div>
       </div>
