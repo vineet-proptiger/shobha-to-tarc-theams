@@ -5,9 +5,9 @@ import { directionsImages, logoImage } from '../lib/images'
 
 const descs = [
   'Strategically located on Golf Course Extension Road with easy access to major expressways and city centers. Elevate your everyday living experience in the heart of Gurugram.',
-  'A rare low-density enclave ensuring enhanced privacy and spacious living within a secure, gated community. Enjoy the peace of mind that comes with exclusive living.',
-  'Only four residences per level for maximum exclusivity, featuring private elevator lobbies and 100% corner views. An architectural masterpiece designed for the select few.',
-  'Panoramic Aravalli vistas and uninterrupted skyline views to elevate your everyday living experience. Unmatched luxury with seamless indoor-outdoor connectivity.',
+  'Unwind in beautifully landscaped open spaces enhanced with calming water elements, peaceful seating zones, and a serene ambiance designed for elevated everyday living.',
+  'Experience refined living with limited residences, expansive corner views, and serene poolside leisure spaces. Thoughtfully designed for privacy and exclusivity, every home offers an elevated lifestyle in a premium residential setting.',
+  'Wake up to beautifully designed bedrooms filled with natural light and stunning outdoor views. Every space is thoughtfully crafted to offer comfort, elegance, and a peaceful start to your day.',
 ]
 
 const directions = directionsImages.map((d, i) => ({ ...d, desc: descs[i] }))
@@ -42,16 +42,6 @@ export default function Directions({ onEnquire }) {
 
   return (
     <section id="directions" className="bg-cream-dark pb-0">
-      {/* Header */}
-      {/* <div className="text-center flex flex-col items-center gap-3.5 opacity-85 px-5" style={{ padding: '10px 20px 30px' }}>
-        <div className="relative h-12 w-28 opacity-70 grayscale brightness-0">
-          <Image src={logoImage} alt="Sobha Realty" fill className="object-contain" />
-        </div>
-        <p className="font-sans text-[12px] sm:text-[13px] font-semibold tracking-[1.5px] text-text-mid uppercase">
-          Sobha Crescent — Sector 63A, Gurugram
-        </p>
-      </div> */}
-
       {/* Tabs */}
       <div className="flex justify-center max-w-[560px] mx-auto flex-wrap px-4 pt-6"
         style={{ paddingBottom: '40px' }}>
