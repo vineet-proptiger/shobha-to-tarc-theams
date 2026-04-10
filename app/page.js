@@ -4,25 +4,25 @@ import dynamic from 'next/dynamic'
 
 // Static imports (LCP critical)
 import Navbar from '../components/Navbar'
-import Hero   from '../components/Hero'
-import About  from '../components/About'
+import Hero from '../components/Hero'
+import About from '../components/About'
 
 // Dynamic imports (SSR: true — SEO sections)
-const Highlights  = dynamic(() => import('../components/Highlights'),  { ssr: true })
-const Directions  = dynamic(() => import('../components/Directions'),  { ssr: true })
-const Amenities   = dynamic(() => import('../components/Amenities'),   { ssr: true })
-const MasterPlan  = dynamic(() => import('../components/MasterPlan'),  { ssr: true })
-const PriceCard   = dynamic(() => import('../components/PriceCard'),   { ssr: true })
-const Location    = dynamic(() => import('../components/Location'),    { ssr: true })
+const Highlights = dynamic(() => import('../components/Highlights'), { ssr: true })
+const Directions = dynamic(() => import('../components/Directions'), { ssr: true })
+const Amenities = dynamic(() => import('../components/Amenities'), { ssr: true })
+const MasterPlan = dynamic(() => import('../components/MasterPlan'), { ssr: true })
+const PriceCard = dynamic(() => import('../components/PriceCard'), { ssr: true })
+const Location = dynamic(() => import('../components/Location'), { ssr: true })
 const PressCenter = dynamic(() => import('../components/PressCenter'), { ssr: true })
-const Developer   = dynamic(() => import('../components/Developer'),   { ssr: true })
-const Footer      = dynamic(() => import('../components/Footer'),      { ssr: true })
+const Developer = dynamic(() => import('../components/Developer'), { ssr: true })
+const Footer = dynamic(() => import('../components/Footer'), { ssr: true })
 
 // Dynamic imports (SSR: false — heavy/interactive)
-const VirtualTour  = dynamic(() => import('../components/VirtualTour'),  { ssr: false })
-const Gallery      = dynamic(() => import('../components/Gallery'),       { ssr: false })
-const EnquireModal = dynamic(() => import('../components/EnquireModal'),  { ssr: false })
-const AosInit      = dynamic(() => import('../components/AosInit'),       { ssr: false })
+const VirtualTour = dynamic(() => import('../components/VirtualTour'), { ssr: false })
+const Gallery = dynamic(() => import('../components/Gallery'), { ssr: false })
+const EnquireModal = dynamic(() => import('../components/EnquireModal'), { ssr: false })
+const AosInit = dynamic(() => import('../components/AosInit'), { ssr: false })
 
 const GOLD = 'var(--color-gold)'
 
@@ -33,15 +33,15 @@ export default function Home() {
     <main className="relative min-h-screen">
       <AosInit />
       <Navbar setIsOpen={setIsOpen} />
-      <Hero         onEnquire={() => setIsOpen(true)} />
-      <About        onEnquire={() => setIsOpen(true)} />
-      <Highlights />
-      <Directions   onEnquire={() => setIsOpen(true)} />
+      <Hero onEnquire={() => setIsOpen(true)} />
+      <About onEnquire={() => setIsOpen(true)} />
+      {/* <Highlights /> */}
+      <Directions onEnquire={() => setIsOpen(true)} />
       <Amenities />
-      <MasterPlan   onEnquire={() => setIsOpen(true)} />
-      <PriceCard    onEnquire={() => setIsOpen(true)} />
+      <MasterPlan onEnquire={() => setIsOpen(true)} />
+      <PriceCard onEnquire={() => setIsOpen(true)} />
       <Location />
-      <VirtualTour  onEnquire={() => setIsOpen(true)} />
+      <VirtualTour onEnquire={() => setIsOpen(true)} />
       <Gallery />
       {/* <PressCenter /> */}
       <Developer />

@@ -10,7 +10,7 @@ const plans = [
     showRupee: false,
   },
   {
-    type: '3 BHK + Study',
+    type: '3 BHK',
     size: '2669.47 Sq.ft.',
     price: 'Ask For Price',
     priceLabel: 'Price Start From',
@@ -18,7 +18,7 @@ const plans = [
     showRupee: true,
   },
   {
-    type: '4 Bed Residence Grande + Utility Room',
+    type: '4 BHK + Utility Room',
     size: '2966.67 Sq.ft.',
     price: 'Ask For Price',
     priceLabel: 'Price Start From',
@@ -82,7 +82,8 @@ export default function PriceCard({ onEnquire }) {
         ))}
       </div>
 
-      <style>{`
+      <style dangerouslySetInnerHTML={{
+        __html: `
         .price-cards-grid {
           display: grid;
           grid-template-columns: repeat(3, 1fr);
@@ -234,7 +235,7 @@ export default function PriceCard({ onEnquire }) {
             max-width: 360px;
           }
         }
-      `}</style>
+      `}} />
     </section>
   )
 }
