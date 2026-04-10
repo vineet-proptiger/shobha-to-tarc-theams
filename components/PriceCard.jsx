@@ -15,7 +15,7 @@ const plans = [
     price: 'Ask For Price',
     priceLabel: 'Price Start From',
     btnText: 'Ask For Price',
-    showRupee: true,
+    showRupee: false,
   },
   {
     type: '4 BHK + Utility Room',
