@@ -63,10 +63,10 @@ export default function MasterPlan({ onEnquire }) {
           </div>
 
           {/* Bottom label */}
-          <div className="masterplan-bottom-label flex items-center gap-3.5">
+          {/* <div className="masterplan-bottom-label flex items-center gap-3.5">
             <span className="font-sans text-[11px] font-bold tracking-[4px] text-gold uppercase">MASTER PLAN</span>
             <div className="w-11 h-[1px] bg-gold" />
-          </div>
+          </div> */}
         </div>
 
         {/* Right image */}
