@@ -43,17 +43,17 @@ export default function Directions({ onEnquire }) {
   return (
     <section id="directions" className="bg-cream-dark pb-0">
       {/* Header */}
-      <div className="text-center flex flex-col items-center gap-3.5 opacity-85 px-5" style={{ padding: '10px 20px 30px' }}>
+      {/* <div className="text-center flex flex-col items-center gap-3.5 opacity-85 px-5" style={{ padding: '10px 20px 30px' }}>
         <div className="relative h-12 w-28 opacity-70 grayscale brightness-0">
           <Image src={logoImage} alt="Sobha Realty" fill className="object-contain" />
         </div>
         <p className="font-sans text-[12px] sm:text-[13px] font-semibold tracking-[1.5px] text-text-mid uppercase">
           Sobha Crescent — Sector 63A, Gurugram
         </p>
-      </div>
+      </div> */}
 
       {/* Tabs */}
-      <div className="flex justify-center max-w-[560px] mx-auto flex-wrap px-4"
+      <div className="flex justify-center max-w-[560px] mx-auto flex-wrap px-4 pt-6"
         style={{ paddingBottom: '40px' }}>
         {directions.map((item, i) => (
           <button key={item.name} onClick={() => setActive(i)}

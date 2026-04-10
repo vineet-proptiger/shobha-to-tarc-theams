@@ -52,9 +52,8 @@ export default function MasterPlan({ onEnquire }) {
             <div className="flex gap-[9px] mt-1">
               {plans.map((_, i) => (
                 <button key={i} onClick={() => setActive(i)} aria-label={`Plan ${i + 1}`}
-                  className={`w-2.5 h-2.5 rounded-full border-none p-0 cursor-pointer transition-all duration-300 ${
-                    i === active ? 'bg-text-dark scale-[1.15]' : 'bg-muted hover:bg-text-light'
-                  }`} />
+                  className={`w-2.5 h-2.5 rounded-full border-none p-0 cursor-pointer transition-all duration-300 ${i === active ? 'bg-text-dark scale-[1.15]' : 'bg-muted hover:bg-text-light'
+                    }`} />
               ))}
             </div>
             <button onClick={onEnquire}
