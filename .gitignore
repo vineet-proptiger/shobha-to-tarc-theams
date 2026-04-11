@@ -37,3 +37,7 @@ Thumbs.db
 
 # backups
 tarc-ishva.zip
+
+# custom exclusions
+maxestate/
+app/maxestate/

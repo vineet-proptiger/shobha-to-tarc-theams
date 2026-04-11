@@ -45,6 +45,11 @@
   /* ── Button radius ──────────────────────────────────── */
   --btn-radius: 4px;
   --btn-radius-pill: 50px;
+
+  /* ── Aliases for maxestate components ───────────────── */
+  --font-jost: var(--font-montserrat);
+  --color-shadow-inner: rgba(175, 117, 28, 0.10);
+  --color-shadow-card: 0 4px 20px rgba(0, 0, 0, 0.07);
 }
 
 
