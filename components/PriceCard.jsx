@@ -168,7 +168,7 @@ export default function PriceCard({ onEnquire }) {
         }
 
         .price-card-bottom {
-          background: #c9a84c;
+          background: var(--color-gold);
           padding: 18px 20px 0;
           display: flex;
           flex-direction: column;
@@ -198,7 +198,7 @@ export default function PriceCard({ onEnquire }) {
           height: 0;
           border-left: 22px solid transparent;
           border-right: 22px solid transparent;
-          border-top: 14px solid #c9a84c;
+          border-top: 14px solid var(--color-gold);
           position: absolute;
           bottom: -14px;
           left: 50%;
@@ -207,7 +207,7 @@ export default function PriceCard({ onEnquire }) {
         }
 
         .price-btn {
-          background: #c9a84c;
+          background: var(--color-gold);
           color: #fff;
           border: 2px solid rgba(255,255,255,0.5);
           font-family: var(--font-sans);
@@ -225,8 +225,8 @@ export default function PriceCard({ onEnquire }) {
 
         .price-btn:hover {
           background: #fff;
-          color: #c9a84c;
-          border-color: #c9a84c;
+          color: var(--color-gold);
+          border-color: var(--color-gold);
         }
 
         @media (max-width: 800px) {

@@ -22,7 +22,15 @@ const LeadForm = ({ formName = 'Hero Form', btnText = 'Submit Details' }) => {
     })
   }, [])
 
-  const handleChange = (e) => setFormData({ ...formData, [e.target.name]: e.target.value })
+  const handleChange = (e) => {
+    const { name, value } = e.target
+    if (name === 'phone') {
+      const digits = value.replace(/\D/g, '').slice(0, 10)
+      setFormData({ ...formData, phone: digits })
+    } else {
+      setFormData({ ...formData, [name]: value })
+    }
+  }
 
   const handleSubmit = async (e) => {
     e.preventDefault()
@@ -30,8 +38,8 @@ const LeadForm = ({ formName = 'Hero Form', btnText = 'Submit Details' }) => {
       setError('Please authorize us to contact you.')
       return
     }
-    if (!formData.phone || formData.phone.length < 10) {
-      setError('Please enter a valid 10-digit mobile number.')
+    if (!formData.phone || !/^[6-9]\d{9}$/.test(formData.phone)) {
+      setError('Please enter a valid 10-digit Indian mobile number.')
       return
     }
     setError('')
@@ -120,7 +128,7 @@ const LeadForm = ({ formName = 'Hero Form', btnText = 'Submit Details' }) => {
       />
       <input
         type="tel" name="phone" required
-        placeholder="10-digit mobile number" maxLength={10}
+        placeholder="10-digit mobile number" maxLength={10} inputMode="numeric"
         value={formData.phone} onChange={handleChange}
         className={inputClass}
         style={{ fontFamily: 'var(--font-sans)', borderBottomColor: '#e0e0e0' }}
