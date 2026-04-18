@@ -37,7 +37,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en" className={`${openSans.variable} ${montserrat.variable} ${cormorant.variable} ${nephilm.variable}`}>
-      <GoogleTagManager gtmId="GTM-NWR7SPL4" />
+      <GoogleTagManager gtmId="GTM-575H8R87" />
       <body>
         <Script id="gtag-init" strategy="beforeInteractive">
           {`window.dataLayer = window.dataLayer || [];
