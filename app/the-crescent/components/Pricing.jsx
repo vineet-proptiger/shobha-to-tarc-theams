@@ -6,22 +6,22 @@ const PRIMARY = 'var(--color-primary)'
 
 const units = [
   {
-    type: '4 BHK',
-    size: '2800 Sq.ft.',
+    type: '3 BHK',
+    size: '2300 Sq.ft.',
     price: '₹ 5.4 Cr*',
     features: ['100% Corner Homes', 'Attractive Payment Plan', 'Ultra-Luxury Residence'],
     isPopular: true,
   },
   {
-    type: '3 BHK',
-    size: '2300 Sq.ft.',
+    type: '3 BHK + Study',
+    size: '2500 Sq.ft.',
     price: 'On Request',
     features: ['100% Corner Homes', 'Attractive Payment Plan', 'Ultra-Luxury Residence'],
     isPopular: false,
   },
   {
-    type: '3 BHK + Study',
-    size: '2500 Sq.ft.',
+    type: '4 BHK',
+    size: '2800 Sq.ft.',
     price: 'On Request',
     features: ['100% Corner Homes', 'Attractive Payment Plan', 'Ultra-Luxury Residence'],
     isPopular: false,

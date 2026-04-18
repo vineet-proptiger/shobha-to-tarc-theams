@@ -2,24 +2,24 @@
 
 const plans = [
   {
-    type: '4 BHK',
-    size: '2800 Sq.ft.',
+    type: '3 BHK',
+    size: '2300 Sq.ft.',
     price: '5.4 Cr*',
     priceLabel: 'Price Start From',
     btnText: 'Get Cost Sheet',
     showRupee: false,
   },
   {
-    type: '3 BHK',
-    size: '2300 Sq.ft.',
+    type: '3 BHK + Study',
+    size: '2500 Sq.ft.',
     price: 'Ask For Price',
     priceLabel: 'Price Start From',
     btnText: 'Ask For Price',
     showRupee: false,
   },
   {
-    type: '3 BHK + Study',
-    size: '2500 Sq.ft.',
+    type: '4 BHK',
+    size: '2800 Sq.ft.',
     price: 'Ask For Price',
     priceLabel: 'Price Start From',
     btnText: 'Ask For Price',
