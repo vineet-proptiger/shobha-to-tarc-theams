@@ -49,7 +49,7 @@ const EnquireModal = ({ isOpen, setIsOpen }) => {
         <div className="hidden sm:block sm:w-[45%] shrink-0 relative min-h-[480px]">
           <Image
             src={enquireImages.bg}
-            alt="Sobha Reality"
+            alt="Sobha Realty"
             fill
             className="object-cover"
             sizes="(max-width: 768px) 0vw, 45vw"
@@ -67,7 +67,7 @@ const EnquireModal = ({ isOpen, setIsOpen }) => {
               className="text-[10px] font-semibold tracking-[3px] uppercase opacity-80 mb-0.5"
               style={{ fontFamily: 'var(--font-sans)' }}
             >
-              Sobha Reality
+              Sobha Realty
             </p>
             <p
               className="font-bold"
@@ -93,7 +93,7 @@ const EnquireModal = ({ isOpen, setIsOpen }) => {
           <div className="sm:hidden w-full h-44 relative shrink-0">
             <Image
               src={enquireImages.bg}
-              alt="Sobha Reality"
+              alt="Sobha Realty"
               fill
               className="object-cover object-top"
               sizes="100vw"
@@ -104,7 +104,7 @@ const EnquireModal = ({ isOpen, setIsOpen }) => {
             />
             <div className="absolute bottom-3 left-4 text-white z-10">
               <p className="text-[9px] font-semibold tracking-[2.5px] uppercase opacity-80"
-                style={{ fontFamily: 'var(--font-sans)' }}>Sobha Reality</p>
+                style={{ fontFamily: 'var(--font-sans)' }}>Sobha Realty</p>
               <p className="text-sm font-medium"
                 style={{ fontFamily: 'var(--font-serif)' }}>Sector 63A, Gurugram</p>
             </div>

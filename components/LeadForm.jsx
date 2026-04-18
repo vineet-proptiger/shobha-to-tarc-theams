@@ -154,7 +154,7 @@ const LeadForm = ({ formName = 'Hero Form', btnText = 'Submit Details' }) => {
           className="text-xs text-gray-500 leading-relaxed cursor-pointer"
           style={{ fontFamily: 'var(--font-sans)' }}
         >
-          I authorize TARC Ltd &amp; its representatives to contact me with updates via Email / SMS / WhatsApp / Call.
+          I authorize the developer and its representatives to contact me with updates via Email / SMS / WhatsApp / Call.
           This will override DND / NDNC settings.
         </label>
       </div>

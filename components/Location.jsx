@@ -2,8 +2,8 @@ import Image from 'next/image'
 import { locationImages } from '../lib/images'
 
 const proximities = [
-  { time: '3 Min',  label: 'Ayu Health Hospital' },
-  { time: '1 Min',  label: 'DPS International Edge' },
+  { time: '3 Min', label: 'Ayu Health Hospital' },
+  { time: '1 Min', label: 'DPS International Edge' },
   { time: '10 Min', label: 'CK Birla Hospital' },
   { time: '10 Min', label: 'Golf Course Road' },
   { time: '15 Min', label: 'Rapid Metro' },
@@ -70,7 +70,7 @@ export default function Location() {
             </div>
             <span className="bg-gold text-white font-sans text-[10px] font-bold tracking-[1.5px] uppercase whitespace-nowrap"
               style={{ padding: '5px 12px' }}>
-              Sobha Reality
+              Sobha Realty
             </span>
           </div>
         </div>

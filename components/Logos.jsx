@@ -1,6 +1,6 @@
 'use client'
 // ═══════════════════════════════════════════════════════════════
-//  LOGOS — Sobha Reality (Next.js)
+//  LOGOS — Sobha Realty (Next.js)
 //
 //  Custom logo lagana ho to:
 //    public/images/logo/TARC-logo.png  → TarcLogo mein use hoga

@@ -19,7 +19,7 @@ export default function VirtualTour({ onEnquire }) {
           <em className="italic" style={{ color: '#e8d5a3' }}>Virtual Tour</em>
         </h2>
         <p className="font-sans text-[14px] leading-[1.8] max-w-[500px] mb-4" style={{ color: 'rgba(255,255,255,0.6)' }}>
-          Walk through Sobha Reality from wherever you are. Experience every detail,
+          Walk through Sobha Realty from wherever you are. Experience every detail,
           every corner, and every view — as if you were there.
         </p>
 
