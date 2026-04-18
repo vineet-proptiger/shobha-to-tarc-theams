@@ -1,7 +1,7 @@
 'use client'
 
 const plans = [
-  {
+  { 
     type: '3 BHK',
     size: '2300 Sq.ft.',
     price: '5.4 Cr*',
