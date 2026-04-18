@@ -16,22 +16,21 @@ function CompassWheel({ label }) {
   const gold = 'var(--color-gold)'
   return (
     <svg style={{ width: '140px', height: '140px', flexShrink: 0 }} viewBox="0 0 220 220" fill="none">
-      <circle cx="110" cy="110" r="105" stroke={gold} strokeWidth="0.8" opacity="0.4" />
-      <circle cx="110" cy="110" r="90" stroke={gold} strokeWidth="0.5" opacity="0.3" />
+      <circle cx="110" cy="110" r="105" stroke={gold} strokeWidth="1.5" opacity="0.6" />
+      <circle cx="110" cy="110" r="90" stroke={gold} strokeWidth="1.2" opacity="0.5" />
       {[0, 45, 90, 135, 180, 225, 270, 315].map(angle => {
         const rad = (angle * Math.PI) / 180
         return <line key={angle}
           x1={110 + 88 * Math.sin(rad)} y1={110 - 88 * Math.cos(rad)}
           x2={110 + 100 * Math.sin(rad)} y2={110 - 100 * Math.cos(rad)}
-          stroke={gold} strokeWidth="1" opacity="0.5" />
+          stroke={gold} strokeWidth="1.5" opacity="0.7" />
       })}
-      <text x="110" y="20" textAnchor="middle" fontSize="11" fill={gold} fontFamily="Montserrat,sans-serif" letterSpacing="1" opacity="0.7">N</text>
-      <text x="200" y="114" textAnchor="middle" fontSize="11" fill={gold} fontFamily="Montserrat,sans-serif" letterSpacing="1" opacity="0.7">E</text>
-      <text x="110" y="208" textAnchor="middle" fontSize="11" fill={gold} fontFamily="Montserrat,sans-serif" letterSpacing="1" opacity="0.7">S</text>
-      <text x="18" y="114" textAnchor="middle" fontSize="11" fill={gold} fontFamily="Montserrat,sans-serif" letterSpacing="1" opacity="0.7">W</text>
-      <circle cx="110" cy="110" r="60" stroke={gold} strokeWidth="0.5" strokeDasharray="4 6" opacity="0.4" />
-      <text x="110" y="115" textAnchor="middle" fontSize="13" fill={gold} fontFamily="Montserrat,sans-serif" fontWeight="700" letterSpacing="3">{label}</text>
-      <circle cx="110" cy="110" r="4" fill={gold} opacity="0.6" />
+      <text x="110" y="21" textAnchor="middle" fontSize="13" fill={gold} fontFamily="Montserrat,sans-serif" fontWeight="700" letterSpacing="1" opacity="0.9">N</text>
+      <text x="200" y="114" textAnchor="middle" fontSize="13" fill={gold} fontFamily="Montserrat,sans-serif" fontWeight="700" letterSpacing="1" opacity="0.9">E</text>
+      <text x="110" y="208" textAnchor="middle" fontSize="13" fill={gold} fontFamily="Montserrat,sans-serif" fontWeight="700" letterSpacing="1" opacity="0.9">S</text>
+      <text x="19" y="114" textAnchor="middle" fontSize="13" fill={gold} fontFamily="Montserrat,sans-serif" fontWeight="700" letterSpacing="1" opacity="0.9">W</text>
+      <circle cx="110" cy="110" r="60" stroke={gold} strokeWidth="1.2" strokeDasharray="4 6" opacity="0.6" />
+      <text x="110" y="115" textAnchor="middle" fontSize="15" fill={gold} fontFamily="Montserrat,sans-serif" fontWeight="700" letterSpacing="3">{label}</text>
     </svg>
   )
 }
@@ -102,9 +101,9 @@ export default function Directions({ onEnquire }) {
         .directions-img { min-height: 280px; }
         .directions-content { padding: 50px 40px; }
         .directions-tab { flex: 1; min-width: 80px; }
-        @media (max-width: 768px) {
+        @media (max-width: 1024px) {
           .directions-grid { grid-template-columns: 1fr; }
-          .directions-img { height: 260px; }
+          .directions-img { display: none; }
           .directions-content { padding: 40px 24px; }
         }
         @media (max-width: 480px) {

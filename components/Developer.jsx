@@ -113,7 +113,7 @@ export default function Developer() {
 
       <h2 className="font-serif italic text-gold text-center mb-8 sm:mb-12 tracking-[0.3px] relative z-10 px-4"
         style={{ fontSize: 'clamp(20px, 2.8vw, 34px)' }}>
-        Visit Sobha Sector 63A Today
+        Visit Sobha 63A Today
       </h2>
 
       {/* Grid */}
@@ -122,7 +122,7 @@ export default function Developer() {
         {/* Left */}
         <p className="font-sans leading-[2] text-text-dark text-justify"
           style={{ fontSize: '13.5px' }}>
-          Sobha Limited is redefining luxury real estate through innovation, craftsmanship and unmatched design.
+          Sobha Realty is redefining luxury real estate through innovation, craftsmanship and unmatched design.
           With a focus on creating timeless spaces, our exceptional developments blend modern sophistication with
           meticulous attention to detail. 'Sobha Crescent' reflects our progressive mindset, blending India's
           rich cultural heritage with contemporary luxury. This fusion of tradition and modernity creates a unique

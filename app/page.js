@@ -69,7 +69,7 @@ export default function Home() {
       {/* Floating Vertical Enquire Tab — Desktop only */}
       <button
         onClick={() => setIsOpen(true)}
-        className="hidden lg:flex fixed right-0 top-1/2 -translate-y-1/2 z-40 items-center font-bold text-xs py-3 px-3 shadow-lg animate-pulseGlow"
+        className="hidden lg:flex fixed right-0 top-1/2 -translate-y-1/2 z-40 items-center font-bold text-xs py-3 px-3 shadow-lg"
         style={{
           background: GOLD,
           color: '#fff',

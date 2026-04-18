@@ -14,13 +14,13 @@ const plans = [
     label: '3 BHK FLOOR PLAN',
     title: 'Spacious 3 BHK Residences',
     desc: 'Thoughtfully crafted 3 BHK floor plans designed to maximise space and natural light. Each residence offers generous living areas, well-appointed bedrooms, and expansive balconies that bring the outdoors in — redefining modern luxury living.',
-    img: masterplanImages.aerial,
+    img: masterplanImages.floorplan,
   },
   {
     label: '4 BHK FLOOR PLAN',
     title: 'Ultra-Luxury 4 BHK Residences',
     desc: 'Expansive 4 BHK floor plans curated for those who seek the finest in luxury living. With private elevator lobbies, panoramic views, and meticulously planned interiors, these residences set a new benchmark for exclusivity and comfort.',
-    img: masterplanImages.aerial,
+    img: masterplanImages.floorplan,
   },
 ]
 
@@ -29,11 +29,11 @@ export default function MasterPlan({ onEnquire }) {
   const plan = plans[active]
 
   return (
-    <section id="masterplan" className="bg-cream">
+    <section id="masterplan" className="bg-cream-dark">
       <div className="masterplan-grid">
 
         {/* Left */}
-        <div className="bg-cream flex flex-col justify-center items-start relative masterplan-left">
+        <div className="bg-cream-dark flex flex-col justify-center items-start relative masterplan-left">
 
           {/* White card */}
           <div className="bg-white flex flex-col items-center gap-4 w-full masterplan-card"

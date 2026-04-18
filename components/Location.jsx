@@ -14,7 +14,7 @@ const proximities = [
 
 export default function Location() {
   return (
-    <section id="location" className="bg-cream py-[60px] px-5 sm:px-[30px] xl:py-[100px]">
+    <section id="location" className="bg-cream-dark py-[60px] px-5 sm:px-[30px] xl:py-[100px]">
       <div className="max-w-[1200px] mx-auto location-grid">
 
         {/* Left */}

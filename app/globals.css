@@ -394,6 +394,34 @@
 }
 
 
+/* ─── Floating Enquire Tab ──────────────────────────────── */
+
+@media (min-width: 1024px) {
+  .btn-floating-tab {
+    @apply btn-gold;
+    position: fixed;
+    right: 0;
+    top: 50%;
+    z-index: 40;
+    transform: translateY(-50%);
+    border-radius: 8px 0 0 8px;
+    writing-mode: vertical-rl;
+    padding: 16px 10px;
+    font-size: 12px;
+    letter-spacing: 0.08em;
+    box-shadow: -4px 0 18px rgba(175, 117, 28, 0.28);
+  }
+
+  .btn-floating-tab:hover {
+    transform: translateY(calc(-50% - 4px)) !important;
+    background: #fff !important;
+    color: var(--color-gold) !important;
+    border: 1px solid var(--color-gold);
+    box-shadow: -6px 0 24px rgba(175, 117, 28, 0.35);
+  }
+}
+
+
 /* ─── Mobile Sticky Bottom Bar ──────────────────────────── */
 
 .sticky-bottom-bar {

@@ -6,7 +6,7 @@ const H = ({ children }) => <span className="text-gold font-medium">{children}</
 
 export default function About({ onEnquire }) {
   return (
-    <section id="about" className="relative flex items-center justify-center md:justify-end overflow-hidden py-20 md:py-0" style={{ minHeight: '90vh' }}>
+    <section id="about" className="relative flex items-center justify-center md:justify-end overflow-hidden py-20 md:py-0" style={{ minHeight: '90vh', background: 'var(--color-cream-dark)' }}>
       <Image
         src={aboutImages.bg}
         alt="Sobha Sector 63A"
@@ -22,10 +22,10 @@ export default function About({ onEnquire }) {
         {/* <div className="relative h-12 w-28 opacity-70 grayscale brightness-0">
           <Image src={logoImage} alt="Sobha Realty" fill className="object-contain" />
         </div> */}
-        <p className="font-sans text-[11px] sm:text-[13px] font-semibold tracking-[2.5px] uppercase text-center mt-1"
+        {/* <p className="font-sans text-[11px] sm:text-[13px] font-semibold tracking-[2.5px] uppercase text-center mt-1"
           style={{ color: 'var(--color-text-mid)' }}>
           SOBHA CRESCENT — SECTOR 63A, GURUGRAM
-        </p>
+        </p> */}
       </div>
 
       {/* Right card */}

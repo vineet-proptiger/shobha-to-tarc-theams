@@ -1,0 +1,8 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(sed -n '100,145p' \"c:/Users/Proptiger/OneDrive - Proptiger Marketing Services Private Ltd/Desktop/shobha-to-tarc-theams/lodha-marq/app/globals.css\")",
+      "Bash(sed -n '350,395p' \"c:/Users/Proptiger/OneDrive - Proptiger Marketing Services Private Ltd/Desktop/shobha-to-tarc-theams/lodha-marq/app/globals.css\")"
+    ]
+  }
+}

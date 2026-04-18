@@ -47,6 +47,11 @@ export default function Highlights() {
         .highlights-item {
           min-width: 40px;
         }
+        @media (max-width: 1024px) {
+          .highlights-strip {
+            display: none;
+          }
+        }
         @media (max-width: 600px) {
           .highlights-strip {
             flex-direction: column;

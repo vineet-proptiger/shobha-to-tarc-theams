@@ -29,7 +29,7 @@ const plans = [
 
 export default function PriceCard({ onEnquire }) {
   return (
-    <section id="pricing" className="bg-[#f4f4f4] py-14 px-4">
+    <section id="pricing" className="py-14 px-4" style={{ background: 'var(--color-cream-dark)' }}>
       {/* Section heading */}
       <h2
         className="text-center font-bold text-[#1a1a1a] mb-10"

@@ -55,7 +55,6 @@ export default function Footer() {
           furniture layout, fittings, illustrations, specifications, designs, dimensions, rendered views, colours,
           amenities and facilities etc. are subject to change without notifications as may be required by the
           relevant authorities or the Developer's architect.{' '}
-          <Link href="#" className="text-gold font-semibold underline hover:text-gold-light transition-colors">Read More</Link>
         </p>
       </div>
     </footer>

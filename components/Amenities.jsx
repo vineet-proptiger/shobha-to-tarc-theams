@@ -12,11 +12,11 @@ export default function Amenities() {
   }, [])
 
   return (
-    <section id="amenities" className="bg-cream">
+    <section id="amenities" className="bg-cream-dark">
       <div className="amenities-grid">
 
         {/* Left */}
-        <div className="bg-cream flex flex-col justify-center items-start relative amenities-left">
+        <div className="bg-cream-dark flex flex-col justify-center items-start relative amenities-left">
 
           {/* White card */}
           <div className="bg-white flex flex-col items-center gap-4 w-full amenities-card"

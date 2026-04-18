@@ -38,9 +38,9 @@ export default function Hero({ onEnquire, onMenuClick }) {
               style={{ fontSize: 'clamp(38px, 7vw, 100px)' }}>
               SOBHA<br />SECTOR 63A
             </h1>
-            <p className="font-sans font-bold tracking-[3px] sm:tracking-[4px] text-white mt-2 sm:mt-3 uppercase"
-              style={{ fontSize: 'clamp(14px, 2.5vw, 32px)' }}>
-              CRESCENT
+            <p className="font-sans font-bold text-white mt-2 sm:mt-3"
+              style={{ fontSize: 'clamp(14px, 2.5vw, 32px)', letterSpacing: '-0.04em' }}>
+             New Launch Golf Course Extension Road
             </p>
           </div>
 
@@ -74,12 +74,12 @@ export default function Hero({ onEnquire, onMenuClick }) {
           <div className="flex-1 flex flex-col items-center justify-center px-6 sm:px-8 text-center gap-4 sm:gap-[18px] py-8 sm:py-10">
             <h2 className="font-serif font-normal text-navy leading-[1.25] tracking-[0.5px]"
               style={{ fontSize: 'clamp(22px, 3vw, 40px)' }}>
-              Sobha Sector 63A<br />Crescent
+              Sobha Crescent<br />Sector 63A
             </h2>
 
             <div className="w-[60px] h-[1px] bg-gold/30 mx-auto" />
 
-            <p className="font-sans text-[11px] font-bold tracking-[3.5px] text-gold uppercase">
+            <p className="font-sans text-[15px] sm:text-[15px] font-bold tracking-[1px] sm:tracking-[1.5px] text-gold uppercase">
               3 &amp; 4 BHK LUXURY RESIDENCES
             </p>
 
