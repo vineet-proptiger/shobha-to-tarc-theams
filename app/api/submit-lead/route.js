@@ -39,6 +39,9 @@ export async function POST(request) {
     let phone = get('phone').replace(/\D/g, '')
     // Strip country code — keep last 10 digits only
     if (phone.length > 10) phone = phone.slice(-10)
+    if (phone.length > 0 && phone.length < 10) {
+      return Response.json({ status: false, msg: 'Invalid phone number' })
+    }
     const email = get('email')
 
     if (phone === '' && email === '') {
