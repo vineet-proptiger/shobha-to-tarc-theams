@@ -95,7 +95,7 @@ const Hero = ({ setIsOpen }) => {
               <div>
                 <p style={{ fontFamily: F_SANS, fontSize: '10px', color: 'rgba(255,255,255,0.4)', textTransform: 'uppercase', letterSpacing: '0.1em', margin: '0 0 3px', fontWeight: '600' }}>Starting From</p>
                 <p className="blink-price" style={{ fontFamily: F_JOST, fontSize: '30px', fontWeight: '900', color: GOLD, margin: 0, lineHeight: 1 }}>
-                  ₹5.4 Cr Onwards
+                  ₹5.57 Cr Onwards
                 </p>
               </div>
             </div>

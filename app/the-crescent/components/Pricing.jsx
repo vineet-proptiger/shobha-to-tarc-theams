@@ -8,7 +8,7 @@ const units = [
   {
     type: '3 BHK',
     size: '2300 Sq.ft.',
-    price: '₹ 5.4 Cr*',
+    price: '₹ 5.57 Cr*',
     features: ['100% Corner Homes', 'Attractive Payment Plan', 'Ultra-Luxury Residence'],
     isPopular: true,
   },

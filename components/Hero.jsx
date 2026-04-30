@@ -40,7 +40,7 @@ export default function Hero({ onEnquire, onMenuClick }) {
             </h1>
             <p className="font-sans font-bold text-white mt-2 sm:mt-3"
               style={{ fontSize: 'clamp(14px, 2.5vw, 32px)', letterSpacing: '-0.04em' }}>
-             New Launch Golf Course Extension Road
+              New Launch Golf Course Extension Road
             </p>
           </div>
 
@@ -88,7 +88,7 @@ export default function Hero({ onEnquire, onMenuClick }) {
             <p className="font-sans text-[12px] text-text-light tracking-[0.5px] -mb-2.5">Price Starts From</p>
             <p className="font-serif font-normal text-gold leading-none"
               style={{ fontSize: 'clamp(36px, 5vw, 62px)' }}>
-              ₹ 5.4 Cr<sup className="text-[0.45em] text-gold">*</sup>
+              ₹ 5.57 Cr<sup className="text-[0.45em] text-gold">*</sup>
             </p>
 
             <button onClick={onEnquire}

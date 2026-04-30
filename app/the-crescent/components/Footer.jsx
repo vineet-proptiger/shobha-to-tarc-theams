@@ -18,7 +18,7 @@ const Footer = () => (
         <span style={{ width: '36px', height: '2.5px', background: 'linear-gradient(90deg, var(--color-gold), var(--color-gold-light))', borderRadius: '2px' }} />
       </div>
       <p style={{ fontSize: '15px', color: '#bbb', fontFamily: F_SANS, lineHeight: 1.8, marginBottom: '32px', textAlign: 'justify' }} data-aos="fade-in" data-aos-delay="100">
-        Sobha Crescent is an ultra-luxury residential development located in the prestigious Sector 63A along Golf Course Extension Road, Gurgaon. Offering newly launched 3 &amp; 4 BHK 100% Corner Residences starting from ₹5.4 Cr*, this iconic 40-storey high-rise rises elegantly across a sprawling 12-acre low-density estate. Every home is designed to maximize natural light, cross ventilation, and uninterrupted views of the Aravalli Range. Crafted by Sobha Realty — a name synonymous with precision, quality, and timely delivery — Sobha Crescent is reserved for the truly distinguished.
+        Sobha Crescent is an ultra-luxury residential development located in the prestigious Sector 63A along Golf Course Extension Road, Gurgaon. Offering newly launched 3 &amp; 4 BHK 100% Corner Residences starting from ₹5.57 Cr*, this iconic 40-storey high-rise rises elegantly across a sprawling 12-acre low-density estate. Every home is designed to maximize natural light, cross ventilation, and uninterrupted views of the Aravalli Range. Crafted by Sobha Realty — a name synonymous with precision, quality, and timely delivery — Sobha Crescent is reserved for the truly distinguished.
       </p>
     </div>
     <div className="flex flex-col sm:flex-row items-center justify-center sm:justify-between gap-4 py-4 px-6 border-t border-[#222] text-center sm:text-left max-w-[1200px] mx-auto">

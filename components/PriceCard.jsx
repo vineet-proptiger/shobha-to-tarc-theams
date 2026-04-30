@@ -1,25 +1,25 @@
 'use client'
 
 const plans = [
-  { 
+  {
     type: '3 BHK',
-    size: '2300 Sq.ft.',
-    price: '5.4 Cr*',
+    size: '2277 Sq.ft.',
+    price: '5.57 Cr*',
     priceLabel: 'Price Start From',
     btnText: 'Get Cost Sheet',
     showRupee: false,
   },
   {
-    type: '3 BHK + Study',
-    size: '2500 Sq.ft.',
+    type: '4 BHK + Study',
+    size: '2669 Sq.ft.',
     price: 'Ask For Price',
     priceLabel: 'Price Start From',
     btnText: 'Ask For Price',
     showRupee: false,
   },
   {
-    type: '4 BHK',
-    size: '2800 Sq.ft.',
+    type: '4 BHK + Servant',
+    size: '2966 Sq.ft.',
     price: 'Ask For Price',
     priceLabel: 'Price Start From',
     btnText: 'Ask For Price',
