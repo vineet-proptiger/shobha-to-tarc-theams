@@ -45,9 +45,9 @@ const Highlights = ({ setIsOpen }) => (
   <section id="highlights" style={{ padding: '56px 0', background: '#ffffff', borderBottom: '1px solid #f0f0f0' }}>
     <div className="container mx-auto px-4 md:px-8">
       <div style={{ textAlign: 'center', marginBottom: '40px' }} data-aos="fade-up">
-        <span style={{ display: 'inline-block', padding: '4px 16px', background: 'var(--color-gold-bg)', borderRadius: '50px', fontSize: '11px', fontWeight: '700', color: 'var(--color-gold)', fontFamily: F_SANS, letterSpacing: '0.1em', textTransform: 'uppercase', border: '1px solid var(--color-gold-light)', marginBottom: '10px' }}>Project Excellence</span>
+        <span style={{ display: 'inline-block', padding: '4px 16px', background: 'var(--color-gold-bg)', borderRadius: '50px', fontSize: '11px', fontWeight: '700', color: 'var(--color-gold)', fontFamily: F_SANS, letterSpacing: '0.1em', textTransform: 'uppercase', border: '1px solid var(--color-gold-light)', marginBottom: '10px' }}>Sobha Crescent 63A</span>
         <h2 style={{ fontFamily: F_SANS, fontWeight: '800', fontSize: '26px', color: '#111827', margin: 0, letterSpacing: '-0.01em' }}>
-          Key <span style={{ color: 'var(--color-gold)' }}>Highlights</span>
+          Sobha Sector 63A Key <span style={{ color: 'var(--color-gold)' }}>Highlights</span>
         </h2>
         <div style={{ display: 'flex', justifyContent: 'center', marginTop: '10px' }}>
           <span style={{ display: 'block', width: '40px', height: '3px', background: 'linear-gradient(90deg, var(--color-gold), var(--color-gold-light))', borderRadius: '2px' }} />

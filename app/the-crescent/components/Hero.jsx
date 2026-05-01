@@ -45,7 +45,7 @@ const Hero = ({ setIsOpen }) => {
           <div className="flex-1 w-full" data-aos="fade-right">
             <div style={{ marginBottom: '18px' }}>
               <span style={{ display: 'inline-block', padding: '5px 16px', background: GOLD, borderRadius: '4px', fontSize: '10px', fontWeight: '800', color: '#fff', fontFamily: F_JOST, letterSpacing: '0.16em', textTransform: 'uppercase' }}>
-                Newly Launched
+                New Launch in gurgaon
               </span>
             </div>
 
@@ -53,7 +53,7 @@ const Hero = ({ setIsOpen }) => {
               Sobha Crescent
             </h1>
             <p style={{ fontFamily: F_SERIF, fontSize: 'clamp(15px, 2vw, 21px)', color: 'rgba(255,255,255,0.6)', fontStyle: 'italic', margin: '0 0 14px', letterSpacing: '0.02em' }}>
-              The Pinnacle of Luxury Living in Gurgaon
+              Sobha Sector 63A of Luxury Apartments in Gurgaon
             </p>
 
             <div style={{ display: 'flex', alignItems: 'center', gap: '7px', marginBottom: '26px' }}>
@@ -94,9 +94,14 @@ const Hero = ({ setIsOpen }) => {
               <div style={{ width: '1px', height: '38px', background: 'rgba(255,255,255,0.18)' }} />
               <div>
                 <p style={{ fontFamily: F_SANS, fontSize: '10px', color: 'rgba(255,255,255,0.4)', textTransform: 'uppercase', letterSpacing: '0.1em', margin: '0 0 3px', fontWeight: '600' }}>Starting From</p>
-                <p className="blink-price" style={{ fontFamily: F_JOST, fontSize: '30px', fontWeight: '900', color: GOLD, margin: 0, lineHeight: 1 }}>
-                  ₹5.57 Cr Onwards
-                </p>
+                <div style={{ display: 'flex', alignItems: 'baseline', gap: '10px' }}>
+                  <span style={{ fontFamily: F_JOST, fontSize: '22px', fontWeight: '700', color: 'rgba(255,255,255,0.38)', textDecoration: 'line-through', lineHeight: 1 }}>
+                    ₹5.75 Cr*
+                  </span>
+                  <p className="blink-price" style={{ fontFamily: F_JOST, fontSize: '30px', fontWeight: '900', color: GOLD, margin: 0, lineHeight: 1 }}>
+                    ₹5.57 Cr*
+                  </p>
+                </div>
               </div>
             </div>
 
@@ -105,7 +110,7 @@ const Hero = ({ setIsOpen }) => {
                 <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
                   <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" /><polyline points="7 10 12 15 17 10" /><line x1="12" y1="15" x2="12" y2="3" />
                 </svg>
-                Download Brochure
+                Save upto 18 Lacs*
               </button>
               <button onClick={() => setIsOpen(true)} style={{ padding: '14px 36px', fontSize: '13px', letterSpacing: '0.1em', background: 'transparent', border: '1.5px solid rgba(255,255,255,0.32)', borderRadius: '6px', color: '#fff', fontFamily: F_JOST, fontWeight: '700', cursor: 'pointer', display: 'flex', alignItems: 'center', gap: '8px', transition: 'border-color 0.25s, background 0.25s' }}
                 onMouseEnter={e => { e.currentTarget.style.borderColor = GOLD; e.currentTarget.style.background = 'rgba(175,117,28,0.1)' }}
@@ -132,9 +137,9 @@ const Hero = ({ setIsOpen }) => {
               <div style={{ padding: '14px 22px', borderBottom: '1px solid rgba(255,255,255,0.07)' }}>
                 <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr 1fr', gap: '8px' }}>
                   {[
-                    { label: 'Land', value: '12 Acres' },
+                    { label: 'Land parcer', value: '12 Acres' },
                     { label: 'Floors', value: 'G + 40' },
-                    { label: 'Possession', value: 'Dec 2028' },
+                    { label: 'Possession', value: 'Dec 2030' },
                   ].map((s, i) => (
                     <div key={i} style={{ textAlign: 'center', padding: '11px 4px', background: 'rgba(255,255,255,0.04)', borderRadius: '8px', border: '1px solid rgba(255,255,255,0.07)' }}>
                       <p style={{ fontFamily: F_JOST, fontSize: '13px', fontWeight: '800', color: '#fff', margin: '0 0 3px' }}>{s.value}</p>
