@@ -13,14 +13,14 @@ const units = [
     isPopular: true,
   },
   {
-    type: '3 BHK + Study',
+    type: '4 BHK + Study',
     size: '2669 Sq.ft.',
     price: 'On Request',
     features: ['100% Corner Homes', 'Attractive Payment Plan', 'Ultra-Luxury Residence'],
     isPopular: false,
   },
   {
-    type: '3 BHK + Servant',
+    type: '4 BHK + Servant',
     size: '2966 Sq.ft.',
     price: 'On Request',
     features: ['100% Corner Homes', 'Attractive Payment Plan', 'Ultra-Luxury Residence'],
