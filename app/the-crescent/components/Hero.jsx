@@ -26,8 +26,8 @@ const Hero = ({ setIsOpen }) => {
             <Image src={src} alt={`Sobha Crescent ${idx + 1}`} fill className="object-cover" priority={idx === 0} sizes="100vw" />
           </div>
         ))}
-        <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(105deg, rgba(0,0,0,0.65) 0%, rgba(0,0,0,0.35) 55%, rgba(0,0,0,0.1) 100%)' }} />
-        <div style={{ position: 'absolute', bottom: 0, left: 0, right: 0, height: '200px', background: 'linear-gradient(to top, rgba(0,0,0,0.35), transparent)' }} />
+        <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(105deg, rgba(0,0,0,0.88) 0%, rgba(0,0,0,0.65) 55%, rgba(0,0,0,0.28) 100%)' }} />
+        <div style={{ position: 'absolute', bottom: 0, left: 0, right: 0, height: '200px', background: 'linear-gradient(to top, rgba(0,0,0,0.65), transparent)' }} />
       </div>
 
       <div style={{ position: 'absolute', top: 0, left: 0, right: 0, zIndex: 20, background: 'linear-gradient(90deg, var(--color-gold-dark), var(--color-gold), var(--color-gold-dark))', padding: '9px 16px', textAlign: 'center' }}>
