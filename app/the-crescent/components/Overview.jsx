@@ -8,7 +8,7 @@ const GOLD = 'var(--color-gold)'
 const F_SANS = 'var(--font-sans), Montserrat, sans-serif'
 
 const PREVIEW_TEXT = `Sobha Crescent in Sector 63A, Gurgaon sets a new benchmark of refined luxury living along the prestigious Golf Course Extension Road, thoughtfully spread across a sprawling 12-acre estate. Among the most anticipated new launches in Gurgaon, this development is designed as a rare low-density residential enclave featuring 4 towers with limited inventory.`
-const MORE_TEXT = ` A 40-storey landmark living experience, it is an iconic high-rise address where every residence is a 100% corner home planned to maximize natural light, cross ventilation, and uninterrupted views of the majestic Aravali Range. Offering thoughtfully crafted luxury 3 & 4 BHK apartments, each home redefines what it means to live luxuriously in Gurgaon.`
+const MORE_TEXT = ` A 42-storey landmark living experience, it is an iconic high-rise address where every residence is a 100% corner home planned to maximize natural light, cross ventilation, and uninterrupted views of the majestic Aravali Range. Offering thoughtfully crafted luxury 3 & 4 BHK apartments, each home redefines what it means to live luxuriously in Gurgaon.`
 
 const inputStyle = {
   width: '100%', padding: '11px 14px', border: '1.5px solid #e5e7eb',
