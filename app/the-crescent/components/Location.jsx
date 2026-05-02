@@ -36,7 +36,7 @@ const Location = () => {
       <div className="container mx-auto px-4 md:px-8">
         <div style={{ marginBottom: '36px', textAlign: 'center' }} data-aos="fade-up">
           <span style={{ display: 'inline-block', padding: '4px 16px', background: 'var(--color-gold-bg)', borderRadius: '50px', fontSize: '11px', fontWeight: '700', color: 'var(--color-gold)', fontFamily: F_JOST, letterSpacing: '0.1em', textTransform: 'uppercase', border: '1px solid var(--color-gold-light)', marginBottom: '10px' }}>
-            Sector 63A, Gurgaon
+            Sobha Golf Course Extension Road
           </span>
           <h2 style={{ fontFamily: F_JOST, fontWeight: '800', fontSize: '26px', color: '#111827', margin: '0 0 6px', letterSpacing: '-0.01em' }}>
             Location <span style={{ color: 'var(--color-gold)' }}>Advantages</span>

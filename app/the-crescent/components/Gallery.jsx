@@ -21,7 +21,7 @@ const Gallery = ({ setIsOpen }) => {
     <section id="gallery" style={{ padding: '56px 0', background: '#f8f9fa', backgroundImage: `url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='48' height='48' viewBox='0 0 48 48'%3E%3Cpath d='M24 2 L46 24 L24 46 L2 24 Z' fill='none' stroke='%23e5e7eb' stroke-width='0.5'/%3E%3C/svg%3E")`, backgroundSize: '48px 48px', borderBottom: '1px solid #e5e7eb' }}>
       <div className="container mx-auto px-4 md:px-8">
         <div style={{ marginBottom: '36px', textAlign: 'center' }} data-aos="fade-up">
-          <span style={{ display: 'inline-block', padding: '4px 16px', background: 'var(--color-gold-bg)', borderRadius: '50px', fontSize: '11px', fontWeight: '700', color: 'var(--color-gold)', fontFamily: F_JOST, letterSpacing: '0.1em', textTransform: 'uppercase', border: '1px solid var(--color-gold-light)', marginBottom: '10px' }}>Visual Tour</span>
+          <span style={{ display: 'inline-block', padding: '4px 16px', background: 'var(--color-gold-bg)', borderRadius: '50px', fontSize: '11px', fontWeight: '700', color: 'var(--color-gold)', fontFamily: F_JOST, letterSpacing: '0.1em', textTransform: 'uppercase', border: '1px solid var(--color-gold-light)', marginBottom: '10px' }}>Sobha Crescent Gurugaon</span>
           <h2 style={{ fontFamily: F_JOST, fontWeight: '800', fontSize: '26px', color: '#111827', margin: '0 0 6px', letterSpacing: '-0.01em' }}>
             A Life That <span style={{ color: 'var(--color-gold)' }}>Awaits For You</span>
           </h2>

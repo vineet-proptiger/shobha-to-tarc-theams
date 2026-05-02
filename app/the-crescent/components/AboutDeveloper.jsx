@@ -147,7 +147,7 @@ const AboutDeveloper = ({ setIsOpen }) => (
           <div style={{ background: 'linear-gradient(135deg, var(--color-primary-dark), var(--color-primary))', padding: '18px 24px', position: 'relative', overflow: 'hidden' }}>
             <div style={{ position: 'absolute', top: 0, left: 0, right: 0, height: '2px', background: 'linear-gradient(90deg, var(--color-gold), var(--color-gold-light))' }} />
             <h3 style={{ fontFamily: F_JOST, fontWeight: '800', fontSize: '18px', color: '#fff', margin: '0 0 4px', letterSpacing: '-0.01em' }}>Book Site Visit Today</h3>
-            <p style={{ fontFamily: F_SANS, fontSize: '12px', color: 'rgba(255,255,255,0.6)', margin: 0 }}>Register now to get the best deal &amp; book your site visit</p>
+            <p style={{ fontFamily: F_SANS, fontSize: '12px', color: 'rgba(255,255,255,0.6)', margin: 0 }}>Register now to get the best deal &amp; offers</p>
           </div>
           <div style={{ padding: '24px', flex: 1, display: 'flex', flexDirection: 'column' }}>
             <ContactForm />
