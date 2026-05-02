@@ -8,7 +8,7 @@ const GOLD = 'var(--color-gold)'
 const F_SANS = 'var(--font-sans), Montserrat, sans-serif'
 
 const PREVIEW_TEXT = `Sobha Crescent in Sector 63A, Gurgaon sets a new benchmark of refined luxury living along the prestigious Golf Course Extension Road, thoughtfully spread across a sprawling 12-acre estate. Among the most anticipated new launches in Gurgaon, this development is designed as a rare low-density residential enclave featuring 4 towers with limited inventory.`
-const MORE_TEXT = ` A 40-storey landmark living experience, it is an iconic high-rise address where every residence is a 100% corner home planned to maximize natural light, cross ventilation, and uninterrupted views of the majestic Aravalli Range. Offering thoughtfully crafted luxury 3 & 4 BHK apartments, each home redefines what it means to live luxuriously in Gurgaon.`
+const MORE_TEXT = ` A 40-storey landmark living experience, it is an iconic high-rise address where every residence is a 100% corner home planned to maximize natural light, cross ventilation, and uninterrupted views of the majestic Aravali Range. Offering thoughtfully crafted luxury 3 & 4 BHK apartments, each home redefines what it means to live luxuriously in Gurgaon.`
 
 const inputStyle = {
   width: '100%', padding: '11px 14px', border: '1.5px solid #e5e7eb',
@@ -129,7 +129,7 @@ const Overview = () => (
         {/* Image */}
         <div data-aos="fade-right" style={{ display: 'flex' }}>
           <div style={{ position: 'relative', borderRadius: '16px', overflow: 'hidden', boxShadow: '0 16px 48px rgba(0,0,0,0.14)', border: '3px solid #fff', width: '100%', minHeight: '340px' }}>
-            <Image src="/images/about/overview.webp" alt="Sobha Crescent" fill className="object-cover object-top" sizes="(max-width: 1024px) 100vw, 33vw" priority />
+            <Image src="/images/about/overview1.webp" alt="Sobha Crescent" fill className="object-cover object-top" sizes="(max-width: 1024px) 100vw, 33vw" priority />
           </div>
         </div>
 
@@ -147,7 +147,7 @@ const Overview = () => (
           <div style={{ background: '#fff', borderRadius: '16px', boxShadow: '0 4px 24px var(--color-shadow-card)', border: '1px solid var(--color-gold-light)', overflow: 'hidden', display: 'flex', flexDirection: 'column', width: '100%' }}>
             <div style={{ background: 'linear-gradient(135deg, var(--color-primary-dark), var(--color-primary))', padding: '18px 20px', position: 'relative', overflow: 'hidden' }}>
               <div style={{ position: 'absolute', top: 0, left: 0, right: 0, height: '2px', background: 'linear-gradient(90deg, var(--color-gold), var(--color-gold-light))' }} />
-              <h3 style={{ fontFamily: F_SANS, fontWeight: '800', fontSize: '16px', color: '#fff', margin: '0 0 4px', letterSpacing: '-0.01em' }}>Get Early Booking Advantage</h3>
+              <h3 style={{ fontFamily: F_SANS, fontWeight: '800', fontSize: '16px', color: '#fff', margin: '0 0 4px', letterSpacing: '-0.01em' }}>Get Early Booking Advantages</h3>
               <p style={{ fontFamily: F_SANS, fontSize: '12px', color: 'rgba(255,255,255,0.6)', margin: 0 }}>Limited Inventory Available — Hurry Now!</p>
             </div>
             <div style={{ padding: '20px', flex: 1, display: 'flex', flexDirection: 'column' }}>

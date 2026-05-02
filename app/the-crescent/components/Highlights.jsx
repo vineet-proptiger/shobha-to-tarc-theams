@@ -6,14 +6,14 @@ const F_SANS = 'var(--font-sans), Montserrat, sans-serif'
 const highlightIconProps = { size: 26, strokeWidth: 1.5 }
 
 const highlights = [
-  { text: 'Luxury 3 & 4 BHK 100% Corner Residences', icon: <BedDouble {...highlightIconProps} /> },
+  { text: 'Luxury 3 & 4 BHK 100% Corner Units', icon: <BedDouble {...highlightIconProps} /> },
   { text: 'Located at Sector 63A, Golf Course Extension Road', icon: <MapPin {...highlightIconProps} /> },
-  { text: 'Panoramic Aravalli Range & City Views', icon: <LayoutPanelLeft {...highlightIconProps} /> },
-  { text: '40-Storey Iconic High-Rise Tower', icon: <Building2 {...highlightIconProps} /> },
+  { text: 'Panoramic Aravali Range & City Views', icon: <LayoutPanelLeft {...highlightIconProps} /> },
+  { text: '42-Storey Iconic High-Rise Tower', icon: <Building2 {...highlightIconProps} /> },
   { text: '12-Acre Low-Density Luxury Estate', icon: <TrendingUp {...highlightIconProps} /> },
   { text: 'Limited Inventory — 4 Towers Only', icon: <Shield {...highlightIconProps} /> },
-  { text: 'Seamless Connectivity to Delhi & Gurgaon', icon: <Navigation {...highlightIconProps} /> },
-  { text: 'World-Class Specifications & Finishes', icon: <Sparkles {...highlightIconProps} /> },
+  { text: 'Seamless Access to Delhi IGI Airport', icon: <Navigation {...highlightIconProps} /> },
+  { text: 'World-Class Amenities and Clubhouse', icon: <Sparkles {...highlightIconProps} /> },
 ]
 
 const HighlightCard = ({ item, idx }) => {

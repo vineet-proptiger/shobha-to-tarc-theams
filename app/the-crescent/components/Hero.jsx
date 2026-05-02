@@ -53,7 +53,7 @@ const Hero = ({ setIsOpen }) => {
               Sobha Crescent
             </h1>
             <p style={{ fontFamily: F_SERIF, fontSize: 'clamp(15px, 2vw, 21px)', color: 'rgba(255,255,255,0.6)', fontStyle: 'italic', margin: '0 0 14px', letterSpacing: '0.02em' }}>
-              Sobha Sector 63A of Luxury Apartments in Gurgaon
+              Sobha Sector 63A,Luxury Apartments in Gurgaon
             </p>
 
             <div style={{ display: 'flex', alignItems: 'center', gap: '7px', marginBottom: '26px' }}>
@@ -89,7 +89,7 @@ const Hero = ({ setIsOpen }) => {
             <div style={{ display: 'flex', alignItems: 'center', gap: '20px', marginBottom: '32px', flexWrap: 'wrap' }}>
               <div>
                 <p style={{ fontFamily: F_SANS, fontSize: '10px', color: 'rgba(255,255,255,0.4)', textTransform: 'uppercase', letterSpacing: '0.1em', margin: '0 0 3px', fontWeight: '600' }}>Configuration</p>
-                <p style={{ fontFamily: F_JOST, fontSize: '15px', fontWeight: '700', color: '#fff', margin: 0 }}>Luxury 3 &amp; 4 BHK 100% Corner Residences</p>
+                <p style={{ fontFamily: F_JOST, fontSize: '15px', fontWeight: '700', color: '#fff', margin: 0 }}>Luxury 3 &amp; 4 BHK 100% Corner Units</p>
               </div>
               <div style={{ width: '1px', height: '38px', background: 'rgba(255,255,255,0.18)' }} />
               <div>

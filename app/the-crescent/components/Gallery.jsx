@@ -42,7 +42,7 @@ const Gallery = ({ setIsOpen }) => {
         </div>
 
         <div style={{ textAlign: 'center', marginTop: '36px' }} data-aos="fade-up">
-          <button onClick={() => setIsOpen(true)} className="btn-gold" style={{ padding: '13px 44px', letterSpacing: '0.08em' }}>Schedule a Site Visit</button>
+          <button onClick={() => setIsOpen(true)} className="btn-gold" style={{ padding: '13px 44px', letterSpacing: '0.08em' }}>Schedule Site Visit</button>
         </div>
       </div>
 
