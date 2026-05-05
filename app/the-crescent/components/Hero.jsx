@@ -38,7 +38,7 @@ const Hero = ({ setIsOpen }) => {
         </p>
       </div>
 
-      <div className="relative z-10 container mx-auto px-4 md:px-8" style={{ minHeight: 'calc(100vh - 82px)', display: 'flex', alignItems: 'center', paddingTop: '48px', paddingBottom: '56px' }}>
+      <div className="relative z-10 container mx-auto px-4 md:px-8 pt-20 md:pt-12" style={{ minHeight: 'calc(100vh - 82px)', display: 'flex', alignItems: 'center', paddingBottom: '56px' }}>
         <div className="flex flex-col lg:flex-row items-start lg:items-end gap-10 w-full">
 
           {/* LEFT — Hero text */}

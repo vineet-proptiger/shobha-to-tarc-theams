@@ -128,8 +128,25 @@ const Overview = () => (
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 items-stretch">
         {/* Image */}
         <div data-aos="fade-right" style={{ display: 'flex' }}>
-          <div style={{ position: 'relative', borderRadius: '16px', overflow: 'hidden', boxShadow: '0 16px 48px rgba(0,0,0,0.14)', border: '3px solid #fff', width: '100%', minHeight: '340px' }}>
-            <Image src="/images/about/overview1.webp" alt="Sobha Crescent" fill className="object-cover object-top" sizes="(max-width: 1024px) 100vw, 33vw" priority />
+          <div 
+            style={{ 
+              position: 'relative', 
+              borderRadius: '16px', 
+              overflow: 'hidden', 
+              boxShadow: '0 16px 48px rgba(0,0,0,0.14)', 
+              border: '3px solid #fff', 
+              width: '100%', 
+            }} 
+            className="min-h-[460px] lg:min-h-[340px] bg-[#fdfdfd]"
+          >
+            <Image 
+              src="/images/about/overview1.webp" 
+              alt="Sobha Crescent" 
+              fill 
+              className="object-contain lg:object-cover lg:object-top" 
+              sizes="(max-width: 1024px) 100vw, 33vw" 
+              priority 
+            />
           </div>
         </div>
 

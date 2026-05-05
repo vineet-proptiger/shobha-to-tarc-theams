@@ -133,10 +133,11 @@ export default function Hero({ onEnquire, onMenuClick }) {
         /* Mobile */
         @media (max-width: 500px) {
           .hero-grid {
-            grid-template-rows: 55vh auto;
+            grid-template-rows: 70vh auto;
           }
           .hero-left {
-            min-height: 55vh;
+            min-height: 70vh;
+            padding-top: 90px;
           }
         }
       `}</style>
