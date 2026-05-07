@@ -1,20 +1,10 @@
 'use client'
 import Image from 'next/image'
-import { useState, useEffect } from 'react'
+import { useState } from 'react'
 import PhoneInput from 'react-phone-input-2'
 import 'react-phone-input-2/lib/style.css'
 import { logoImage } from '../lib/images'
 import { API_ENDPOINT, PROJECT_ID, PROJECT_NAME, SHEET_NAME, SECRET_KEY, CITY_DISPLAY } from '../lib/config'
-
-let _geoPromise = null
-function getGeo() {
-  if (!_geoPromise) {
-    _geoPromise = fetch('/api/geo')
-      .then(r => r.json())
-      .catch(() => null)
-  }
-  return _geoPromise
-}
 
 function getParam(name) {
   if (typeof window === 'undefined') return ''
@@ -38,16 +28,6 @@ export default function Developer() {
   const [loading, setLoading] = useState(false)
   const [submitted, setSubmitted] = useState(false)
   const [apiError, setApiError] = useState('')
-  const [ipAddress, setIpAddress] = useState('')
-  const [geoAddress, setGeoAddress] = useState({ city: '', region: '', postal_code: '', country: '' })
-
-  useEffect(() => {
-    getGeo().then(d => {
-      if (!d) return
-      setIpAddress(d.ip || '')
-      setGeoAddress({ city: d.city, region: d.region, postal_code: d.postal_code, country: d.country })
-    })
-  }, [])
 
   const handleSubmit = async (e) => {
     e.preventDefault(); setApiError('')
@@ -66,9 +46,9 @@ export default function Developer() {
       landing_page: typeof window !== 'undefined' ? window.location.href : '',
       referrer: typeof document !== 'undefined' ? document.referrer : '',
       device: typeof window !== 'undefined' ? (window.innerWidth < 768 ? 'mobile' : 'desktop') : '',
-      ip_address: ipAddress, website: '',
-      geo_city: geoAddress.city, geo_region: geoAddress.region,
-      geo_postal: geoAddress.postal_code, geo_country: geoAddress.country
+      ip_address: '', website: '',
+      geo_city: '', geo_region: '',
+      geo_postal: '', geo_country: ''
     }
     Object.entries(fields).forEach(([k, v]) => body.append(k, v))
     try {
@@ -84,8 +64,8 @@ export default function Developer() {
             email: form.email.trim() || undefined,
             phone: phone.replace(/\D/g, '').slice(-10),
             first_name: nameParts[0] || '',
-            last_name: nameParts.slice(1).join(' ') || '',
-            address: geoAddress
+            last_name: nameParts.slice(1).join(' ') || ''
+
           }
         })
         setSubmitted(true)

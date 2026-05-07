@@ -1,7 +1,7 @@
 'use client'
-import React, { useState, useEffect } from 'react'
+import React, { useState } from 'react'
 import { PROJECT_ID, PROJECT_NAME, API_ENDPOINT, SHEET_NAME, SECRET_KEY, CITY_DISPLAY } from '../lib/config'
-import { getGeo, buildTrackingFields } from '../lib/formMeta'
+import { buildTrackingFields } from '../lib/formMeta'
 
 const inputClass =
   'w-full py-3 text-sm text-gray-700 outline-none bg-transparent placeholder-gray-400 border-0 border-b border-gray-200 focus:border-b-2 transition-all'
@@ -11,16 +11,6 @@ const LeadForm = ({ formName = 'Hero Form', btnText = 'Submit Details' }) => {
   const [loading, setLoading] = useState(false)
   const [success, setSuccess] = useState(false)
   const [error, setError] = useState('')
-  const [ipAddress, setIpAddress] = useState('')
-  const [geoAddress, setGeoAddress] = useState(null)
-
-  useEffect(() => {
-    getGeo().then(d => {
-      if (!d) return
-      setIpAddress(d.ip || '')
-      setGeoAddress({ city: d.city, region: d.region, postal_code: d.postal_code, country: d.country })
-    })
-  }, [])
 
   const handleChange = (e) => {
     const { name, value } = e.target
@@ -45,7 +35,7 @@ const LeadForm = ({ formName = 'Hero Form', btnText = 'Submit Details' }) => {
     setError('')
     setLoading(true)
 
-    const tracking = buildTrackingFields(ipAddress, geoAddress)
+    const tracking = buildTrackingFields()
     const payload = new FormData()
 
     payload.append('fullname', formData.fullname)
@@ -74,8 +64,8 @@ const LeadForm = ({ formName = 'Hero Form', btnText = 'Submit Details' }) => {
               email: formData.email.trim() || undefined,
               phone: formData.phone,
               first_name: nameParts[0] || '',
-              last_name: nameParts.slice(1).join(' ') || '',
-              address: geoAddress,
+              last_name: nameParts.slice(1).join(' ') || ''
+
             },
           })
         }
