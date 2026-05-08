@@ -1,9 +1,9 @@
 'use client'
 import React, { useEffect, useRef } from 'react'
-import Image from 'next/image'
+// import Image from 'next/image'
 import { X } from 'lucide-react'
 import LeadForm from './LeadForm'
-import { enquireImages } from '../lib/images'
+// import { enquireImages } from '../lib/images'
 
 const EnquireModal = ({ isOpen, setIsOpen }) => {
   const autoTriggered = useRef(false)
@@ -38,15 +38,15 @@ const EnquireModal = ({ isOpen, setIsOpen }) => {
       <div
         className="relative bg-white w-full rounded-2xl overflow-hidden shadow-2xl flex flex-col sm:flex-row"
         style={{
-          maxWidth: '960px',
-          width: '95vw',
+          maxWidth: '400px',
+          width: '92vw',
           maxHeight: '95vh',
           animation: 'slideInRight 0.45s cubic-bezier(0.22,1,0.36,1) forwards',
         }}
         onClick={(e) => e.stopPropagation()}
       >
         {/* LEFT — Image panel (hidden on mobile) */}
-        <div className="hidden sm:block sm:w-[45%] shrink-0 relative min-h-[480px]">
+        {/* <div className="hidden sm:block sm:w-[45%] shrink-0 relative min-h-[480px]">
           <Image
             src={enquireImages.bg}
             alt="Sobha Realty"
@@ -54,12 +54,10 @@ const EnquireModal = ({ isOpen, setIsOpen }) => {
             className="object-cover"
             sizes="(max-width: 768px) 0vw, 45vw"
           />
-          {/* Gradient overlay */}
           <div
             className="absolute inset-0"
             style={{ background: 'linear-gradient(to top, rgba(26,18,8,0.85) 0%, rgba(26,18,8,0.1) 60%)' }}
           />
-          {/* Caption */}
           <div
             className="absolute bottom-0 left-0 right-0 p-5 text-white z-10"
           >
@@ -76,7 +74,7 @@ const EnquireModal = ({ isOpen, setIsOpen }) => {
               Sector 63A, Gurugram
             </p>
           </div>
-        </div>
+        </div> */}
 
         {/* RIGHT — Form panel */}
         <div className="flex-1 flex flex-col overflow-y-auto">
@@ -90,7 +88,7 @@ const EnquireModal = ({ isOpen, setIsOpen }) => {
           </button>
 
           {/* Mobile top image strip */}
-          <div className="sm:hidden w-full h-44 relative shrink-0">
+          {/* <div className="sm:hidden w-full h-44 relative shrink-0">
             <Image
               src={enquireImages.bg}
               alt="Sobha Realty"
@@ -108,10 +106,10 @@ const EnquireModal = ({ isOpen, setIsOpen }) => {
               <p className="text-sm font-medium"
                 style={{ fontFamily: 'var(--font-serif)' }}>Sector 63A, Gurugram</p>
             </div>
-          </div>
+          </div> */}
 
           {/* Form content */}
-          <div className="p-5 sm:p-8 flex flex-col justify-center flex-1">
+          <div className="p-4 sm:p-5 pt-8 sm:pt-10 flex flex-col justify-center flex-1">
 
             {/* Title */}
             <h3
@@ -122,15 +120,6 @@ const EnquireModal = ({ isOpen, setIsOpen }) => {
             </h3>
 
             {/* Subtitle */}
-            <p
-              className="text-center text-sm text-gray-500 mb-5"
-              style={{ fontFamily: 'var(--font-sans)' }}
-            >
-              Register Now To Get{' '}
-              <span className="blink-price font-bold" style={{ color: 'var(--color-gold-dark)' }}>
-                Best Offers
-              </span>
-            </p>
 
             {/* Form */}
             <LeadForm formName="Popup Modal" btnText="Submit Details" />

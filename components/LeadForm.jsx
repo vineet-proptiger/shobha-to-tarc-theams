@@ -144,19 +144,22 @@ const LeadForm = ({ formName = 'Hero Form', btnText = 'Submit Details' }) => {
           className="text-xs text-gray-500 leading-relaxed cursor-pointer"
           style={{ fontFamily: 'var(--font-sans)' }}
         >
-          I authorize the developer and its representatives to contact me with updates via Email / SMS / WhatsApp / Call.
-          This will override DND / NDNC settings.
+          I agree to receive updates as per the{' '}
+          <a href="/privacy-policy" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--color-gold)', textDecoration: 'underline' }}>Privacy Policy</a>
         </label>
       </div>
 
       <button
         type="submit" disabled={loading}
-        className="mt-4 w-full py-3.5 rounded-full font-bold text-sm flex items-center justify-center gap-2 disabled:opacity-70 text-white"
+        className="mt-4 py-3.5 rounded-full font-bold text-sm flex items-center justify-center gap-2 disabled:opacity-70 text-white"
         style={{
           background: 'var(--color-gold)',
           fontFamily: 'var(--font-sans)',
           letterSpacing: '1.5px',
           textTransform: 'uppercase',
+          width: '80%',
+          marginLeft: 'auto',
+          marginRight: 'auto',
         }}
       >
         <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"
