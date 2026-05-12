@@ -15,11 +15,18 @@ const ContactForm = () => {
   const [success, setSuccess] = useState(false)
   const [error, setError] = useState('')
 
-  const handle = (e) => setForm({ ...form, [e.target.name]: e.target.value })
+  const handle = (e) => {
+    const { name, value } = e.target
+    if (name === 'phone') {
+      setForm({ ...form, phone: value.replace(/\D/g, '').slice(0, 10) })
+    } else {
+      setForm({ ...form, [name]: value })
+    }
+  }
 
   const submit = async (e) => {
     e.preventDefault()
-    if (form.phone.replace(/\D/g, '').length < 10) { setError('Enter valid 10-digit number'); return }
+    if (!form.phone || !/^[6-9]\d{9}$/.test(form.phone)) { setError('Enter a valid 10-digit Indian mobile number'); return }
     setError(''); setLoading(true)
     const tracking = buildTrackingFields()
     const payload = new FormData()
@@ -79,6 +86,7 @@ const ContactForm = () => {
           </label>
           <input name={field.name} required={field.required} value={form[field.name]} onChange={handle}
             placeholder={field.placeholder} maxLength={field.maxLength}
+            inputMode={field.name === 'phone' ? 'numeric' : undefined}
             className="form-input" style={{ fontFamily: F_SANS, width: '100%' }} />
         </div>
       ))}

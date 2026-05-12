@@ -13,11 +13,18 @@ const LeadForm = ({ formName = 'Hero Form', btnText = 'Submit Details' }) => {
   const [success, setSuccess] = useState(false)
   const [error, setError] = useState('')
 
-  const handleChange = (e) => setFormData({ ...formData, [e.target.name]: e.target.value })
+  const handleChange = (e) => {
+    const { name, value } = e.target
+    if (name === 'phone') {
+      setFormData({ ...formData, phone: value.replace(/\D/g, '').slice(0, 10) })
+    } else {
+      setFormData({ ...formData, [name]: value })
+    }
+  }
 
   const handleSubmit = async (e) => {
     e.preventDefault()
-    if (!formData.phone || formData.phone.replace(/\D/g, '').length < 10) { setError('Please enter a valid 10-digit mobile number.'); return }
+    if (!formData.phone || !/^[6-9]\d{9}$/.test(formData.phone)) { setError('Please enter a valid 10-digit Indian mobile number.'); return }
     setError(''); setLoading(true)
     const tracking = buildTrackingFields()
     const payload = new FormData()
@@ -71,7 +78,7 @@ const LeadForm = ({ formName = 'Hero Form', btnText = 'Submit Details' }) => {
         className="form-input mb-3 shadow-sm" style={{ fontFamily: F_SANS }} />
       <input type="email" name="email" placeholder="Email Id (optional)" value={formData.email} onChange={handleChange}
         className="form-input mb-3 shadow-sm" style={{ fontFamily: F_SANS }} />
-      <input type="tel" name="phone" required placeholder="10-digit mobile number" maxLength={10} value={formData.phone} onChange={handleChange}
+      <input type="tel" name="phone" required placeholder="10-digit mobile number" maxLength={10} inputMode="numeric" value={formData.phone} onChange={handleChange}
         className="form-input mb-3 shadow-sm" style={{ fontFamily: F_SANS }} />
       {error && <p className="text-red-500 text-xs mt-1" style={{ fontFamily: F_SANS }}>{error}</p>}
       <div className="flex items-start gap-2 mt-3">
