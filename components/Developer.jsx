@@ -62,7 +62,7 @@ export default function Developer() {
           form_name: 'contact_form',
           user_data: {
             email: form.email.trim() || undefined,
-            phone: phone.replace(/\D/g, '').slice(-10),
+            phone: `+91${phone.replace(/\D/g, '').slice(-10)}`,
             first_name: nameParts[0] || '',
             last_name: nameParts.slice(1).join(' ') || ''
 
