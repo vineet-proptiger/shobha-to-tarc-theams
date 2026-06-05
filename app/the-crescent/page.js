@@ -47,7 +47,7 @@ export default function TheCrescent() {
 
       {/* Mobile Sticky Bottom Bar */}
       <div className="sticky-bottom-bar">
-        <a href="tel:+919718344024"
+        <a id="mobile-call" href="tel:+919718344024"
           className="flex-1 flex items-center justify-center !py-2 !px-0 text-white transition-all"
           style={{ background: 'var(--color-navy)' }}>
           <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">

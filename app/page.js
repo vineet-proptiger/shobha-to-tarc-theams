@@ -87,6 +87,8 @@ export default function Home() {
       {/* Mobile Sticky Bottom Bar */}
       <div className="sticky-bottom-bar">
         <a
+          id="mobile-call"
+
           href="tel:+919718344024"
           className="flex-1 flex items-center justify-center gap-1.5 py-3.5 text-white font-semibold text-sm"
           style={{ background: 'var(--color-navy)', fontFamily: 'var(--font-sans)' }}
