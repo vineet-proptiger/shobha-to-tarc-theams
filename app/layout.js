@@ -1,5 +1,6 @@
 import './globals.css'
 import { Open_Sans, Montserrat, Cormorant_Garamond } from 'next/font/google'
+import { CITY_DISPLAY } from '../lib/config'
 import localFont from 'next/font/local'
 import { GoogleTagManager } from '@next/third-parties/google'
 import Script from 'next/script'
@@ -41,6 +42,7 @@ export default function RootLayout({ children }) {
       <body>
         <Script id="gtag-init" strategy="beforeInteractive">
           {`window.dataLayer = window.dataLayer || [];
+window.dataLayer.push({ 'city': '${CITY_DISPLAY}' });
 function gtag(){dataLayer.push(arguments);}
 gtag('js', new Date());`}
         </Script>
