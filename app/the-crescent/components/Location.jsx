@@ -85,10 +85,10 @@ const Location = () => {
             <div style={{ borderRadius: '16px', overflow: 'hidden', boxShadow: '0 8px 32px var(--color-shadow-inner)', border: '2px solid var(--color-gold)', height: '100%', minHeight: '420px', position: 'relative' }}>
               <div style={{ position: 'absolute', top: 0, left: 0, right: 0, height: '3px', background: 'linear-gradient(90deg, var(--color-gold), var(--color-gold-light))', zIndex: 10 }} />
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3508.6!2d77.0666!3d28.4089!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d23b9e7b5df4f%3A0xa1c3b4e5d6f7a890!2sSector+63A%2C+Gurugram%2C+Haryana!5e0!3m2!1sen!2sin!4v1700000000000"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28077.087187782927!2d77.08142740209412!3d28.40006319420641!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d23daf896d34f%3A0x21cb2d260bf7989c!2sSobha%20Crescent!5e0!3m2!1sen!2sin!4v1783589992360!5m2!1sen!2sin"
                 width="100%" height="100%"
                 style={{ border: 0, minHeight: '420px', display: 'block' }}
-                allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade"
+                allowFullScreen="" loading="lazy" referrerPolicy="strict-origin-when-cross-origin"
               />
               <div style={{ position: 'absolute', bottom: '16px', left: '16px', zIndex: 10, background: 'var(--color-gold)', opacity: 0.9, backdropFilter: 'blur(6px)', borderRadius: '8px', padding: '6px 14px', display: 'flex', alignItems: 'center', gap: '6px' }}>
                 <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#fff" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
