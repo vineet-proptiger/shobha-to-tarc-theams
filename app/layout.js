@@ -1,6 +1,6 @@
 import './globals.css'
 import { Open_Sans, Montserrat, Cormorant_Garamond } from 'next/font/google'
-import { CITY_DISPLAY } from '../lib/config'
+import { CITY_DISPLAY, SITE_URL } from '../lib/config'
 import localFont from 'next/font/local'
 import { GoogleTagManager } from '@next/third-parties/google'
 import Script from 'next/script'
@@ -31,8 +31,33 @@ const nephilm = localFont({
 })
 
 export const metadata = {
-  title: 'Sobha Sector 63A Crescent | Luxury Residences Gurugram',
-  description: '3 & 4 BHK Ultra-Luxury Residencess at Sobha Sector 63A on Golf Course Extension Road, Gurugram. Starting ₹5.4Cr*. 12-acre township, 4 towers, 100% Corner  Units.',
+  metadataBase: new URL(SITE_URL),
+  title: {
+    default: 'Sobha Sector 63A Crescent | Luxury Residences Gurugram',
+    template: '%s | Sobha Sector 63A Gurugram',
+  },
+  description: '3 & 4 BHK Ultra-Luxury Residences at Sobha Sector 63A on Golf Course Extension Road, Gurugram. Starting ₹5.4Cr*. 12-acre township, 4 towers, 100% Corner Units.',
+  keywords: 'Sobha Sector 63A, Sobha Crescent, Sobha Gurugram, Luxury Apartments Gurgaon, Golf Course Extension Road residences, 3 BHK luxury Gurgaon, 4 BHK luxury Gurgaon',
+  alternates: {
+    canonical: '/',
+  },
+  openGraph: {
+    title: 'Sobha Sector 63A Crescent | Luxury Residences Gurugram',
+    description: '3 & 4 BHK Ultra-Luxury Residences at Sobha Sector 63A on Golf Course Extension Road, Gurugram. Starting ₹5.4Cr*. 12-acre township, 4 towers, 100% Corner Units.',
+    url: SITE_URL,
+    siteName: 'Sobha Crescent Sector 63A Gurugram',
+    locale: 'en_IN',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Sobha Sector 63A Crescent | Luxury Residences Gurugram',
+    description: '3 & 4 BHK Ultra-Luxury Residences at Sobha Sector 63A on Golf Course Extension Road, Gurugram. Starting ₹5.4Cr*.',
+  },
+  robots: {
+    index: true,
+    follow: true,
+  },
 }
 
 export default function RootLayout({ children }) {
@@ -40,6 +65,22 @@ export default function RootLayout({ children }) {
     <html lang="en" className={`${openSans.variable} ${montserrat.variable} ${cormorant.variable} ${nephilm.variable}`}>
       <GoogleTagManager gtmId="GTM-575H8R87" />
       <body>
+        <Script id="structured-data-schema" type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "RealEstateAgent",
+            "name": "Sobha Crescent Sector 63A",
+            "url": SITE_URL,
+            "description": "3 & 4 BHK Ultra-Luxury Residences at Sobha Sector 63A on Golf Course Extension Road, Gurugram. Starting ₹5.4 Cr*.",
+            "address": {
+              "@type": "PostalAddress",
+              "addressLocality": "Gurugram",
+              "addressRegion": "Haryana",
+              "addressCountry": "IN"
+            },
+            "priceRange": "₹5.4 Cr onwards"
+          })}
+        </Script>
         <Script id="gtag-init" strategy="beforeInteractive">
           {`window.dataLayer = window.dataLayer || [];
 window.dataLayer.push({ 'city': '${CITY_DISPLAY}' });
