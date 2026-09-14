@@ -59,7 +59,7 @@ export default function TheCrescent() {
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z" />
           </svg>
         </button>
-        <a href="https://wa.me/919718344024?text=Hi%20I%20am%20interested%20in%20Sobha%20Crescent%20Sector%2063A%20Gurgaon"
+        <a href="https://wa.me/919560582493?text=Hi%20I%20am%20interested%20in%20Sobha%20Crescent%20Sector%2063A%20Gurgaon"
           target="_blank" rel="noopener noreferrer"
           className="flex-1 flex items-center justify-center py-2 !px-0 text-white"
           style={{ background: '#25D366' }}>
